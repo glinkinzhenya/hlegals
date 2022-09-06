@@ -1,0 +1,27 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header-menu__navbar {
+    grid-area: nav;
+    margin-top: auto;
+}
+
+.navbar {
+
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+    }
+
+    &__item {}
+
+    &__link {
+        padding: 0.5em 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+
+}

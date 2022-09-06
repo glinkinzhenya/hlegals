@@ -1,0 +1,29 @@
+@use "assets/scss/presets" as *;
+@use "assets/scss/mixins" as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-weight: 400;
+    font-family: "TT Norms", "sans-serif" ;
+}
+
+a {
+    text-decoration: none;
+
+    color: white;
+}
+
+ul {
+    @include unlist;
+}
