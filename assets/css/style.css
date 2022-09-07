@@ -355,6 +355,21 @@ ul {
 
   gap: 15px;
 }
+.navbar__list.open {
+  position: absolute;
+  right: 0;
+  left: 0;
+
+  display: block;
+
+  text-align: center;
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(50, 50, 100, 0)), to(#323264));
+  background: -o-linear-gradient(top, rgba(50, 50, 100, 0) 40%, #323264 100%);
+  background:    linear-gradient(180deg, rgba(50, 50, 100, 0) 40%, #323264 100%);
+  -webkit-box-shadow: 0 15px 10px #323264;
+          box-shadow: 0 15px 10px #323264;
+}
 .navbar__link {
   padding: 0.5em 0;
 
@@ -371,9 +386,11 @@ ul {
 .navbar-hamburger {
   position: relative;
 
+  display: none;
+
   width: 60px;
   height: 45px;
-  margin: 50px auto;
+  margin-left: auto;
 
   cursor: pointer;
   -webkit-transition: 0.5s ease-in-out;
@@ -402,7 +419,7 @@ ul {
 
   opacity: 1;
   border-radius: 9px;
-  background: #d3531a;
+  background: #ffffff;
 }
 
 .navbar-hamburger span:nth-child(1) {
@@ -519,5 +536,8 @@ ul {
   }
   .navbar__list {
     display: none;
+  }
+  .navbar-hamburger {
+    display: block;
   }
 }
