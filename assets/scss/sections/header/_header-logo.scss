@@ -7,12 +7,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 
     &__image {
         position: absolute;
-        bottom: 0;
-        transform: scale(1.2);
+        // bottom: 0;
+        // transform: scale(1);
     }
 
     &__title {
@@ -23,6 +22,6 @@
         font-weight: 500;
         color: #FFFFFF;
         max-width: 600px;
-        padding-bottom: 116px;
+        padding-bottom: 180px;
     }
 }

@@ -13,5 +13,9 @@
 
     &__image {
         width: 155px;
+
+        @include sm {
+            width: 78px;
+        }
     }
 }

@@ -33,4 +33,25 @@
     grid-template-areas: "logo info"
         "logo nav";
     padding-top: 50px;
+    gap: 0 $gap;
+    position: relative;
+    z-index: 1;
+
+    @include md {
+        gap: $gap;
+        grid-template-areas:
+            "info info"
+            "logo logo"
+            "nav nav";
+        padding-top: 20px;
+    }
+
+  @include sm {
+      
+      grid-template-areas:
+          "info info"
+          "logo nav";
+      
+  }
+
 }

@@ -6,6 +6,18 @@
     display: flex;
     gap: $gap;
     align-items: center;
+    flex-wrap: wrap;
+    // justify-content: center;
+
+    @include md {
+        a {
+            color: $color-gray-text;
+        }
+    }
+
+    @include sm {
+        justify-content: space-between;
+    }
 }
 
 .info {
@@ -21,17 +33,22 @@
         border-radius: 10px;
 
         &:hover {
-            background-color: $color-accent;
+            color: $color-accent;
 
         }
 
         &.active {
             background-color: $color-accent;
+            color: $color-white;
         }
 
     }
 
-    &__address {}
+    &__address {
+        @include sm {
+            display: none;
+        }
+    }
 
     &__address-link {
         font-weight: 400;
@@ -49,7 +66,11 @@
         color: #FFFFFF;
     }
 
-    &__social {}
+    &__social {
+        @include md {
+            display: none;
+        }
+    }
 
     &__social-link {}
 
