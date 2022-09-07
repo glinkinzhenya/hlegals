@@ -4,7 +4,27 @@
 .header {
     height: 100vh;
     background: $bg-gradient-1;
+    position: relative;
+    overflow: hidden;
 
+    &::before {
+        content: "";
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+        background-size: 85vh, 70vh;
+        background-image: url(../img/logobackground.svg);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    &::after {
+        content: "";
+        background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+        @include abs-position(70%);
+    }
 }
 
 .header-menu {
@@ -12,5 +32,5 @@
     justify-content: space-between;
     grid-template-areas: "logo info"
         "logo nav";
-        padding-top: 50px;
+    padding-top: 50px;
 }

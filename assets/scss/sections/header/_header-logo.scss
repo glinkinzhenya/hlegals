@@ -1,0 +1,28 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+
+.header-logo {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &__image {
+        position: absolute;
+        bottom: 0;
+        transform: scale(1.2);
+    }
+
+    &__title {
+        position: absolute;
+        font-size: 38px;
+        line-height: 45px;
+        text-align: center;
+        font-weight: 500;
+        color: #FFFFFF;
+        max-width: 600px;
+        padding-bottom: 116px;
+    }
+}

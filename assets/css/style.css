@@ -230,10 +230,41 @@ ul {
 }
 
 .header {
+  position: relative;
+
+  overflow: hidden;
+
   height: 100vh;
 
   background: -o-linear-gradient(48deg, #323264 14%, #323264 51%, #7a425e 88%);
   background:    linear-gradient(42deg, #323264 14%, #323264 51%, #7a425e 88%);
+}
+.header::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+
+  background-image: url(../img/logobackground.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 85vh, 70vh;
+}
+.header::after {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(16.67%, rgba(50, 50, 100, 0)), to(#323264));
+  background: -o-linear-gradient(top, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+  background:    linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
 }
 
 .header-menu {
@@ -263,13 +294,16 @@ ul {
   padding: 6px 8px;
 
   color: #ffffff;
+  border-radius: 10px;
 
   font-size: 12px;
   font-weight: 700;
   line-height: 14px;
 }
 .info__language-link:hover {
-  border-radius: 10px;
+  background-color: #ef145a;
+}
+.info__language-link.active {
   background-color: #ef145a;
 }
 .info__address-link {
@@ -322,4 +356,54 @@ ul {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+}
+
+.header-logo {
+  position: relative;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  min-height: 100vh;
+}
+.header-logo__image {
+  position: absolute;
+  bottom: 0;
+
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.header-logo__title {
+  position: absolute;
+
+  max-width: 600px;
+  padding-bottom: 116px;
+
+  text-align: center;
+
+  color: #ffffff;
+
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.header-logo__button {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 50%;
+
+  cursor: pointer;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
