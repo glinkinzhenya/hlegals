@@ -1,6 +1,8 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
 
+$size: 16px;
+
 .slider {
     display: flex;
 
@@ -12,6 +14,7 @@
 
     @include lg {
         flex-direction: column;
+
     }
 
 
@@ -24,14 +27,17 @@
         flex-basis: 0;
         flex-grow: 2;
 
-        &::after {
-            content: "";
-            position: absolute;
-            right: -42px;
-            width: 4px;
-            height: 100%;
-            background-color: $color-gray-separator;
+        @include lg-min {
+            &::after {
+                content: "";
+                position: absolute;
+                right: -42px;
+                width: 4px;
+                height: 100%;
+                background-color: $color-gray-separator;
+            }
         }
+
 
 
     }
@@ -50,6 +56,7 @@
 
         @include lg {
             display: none;
+            margin-bottom: 10px;
 
             font-size: 14px;
             line-height: 17px;
@@ -75,14 +82,16 @@
                 display: block;
             }
 
-            &::after {
-                content: "";
-                position: absolute;
-                z-index: 1;
-                right: -42px;
-                width: 4px;
-                height: 100%;
-                background-color: $color-accent;
+            @include lg-min {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    z-index: 1;
+                    right: -42px;
+                    width: 4px;
+                    height: 100%;
+                    background-color: $color-accent;
+                }
             }
 
         }
@@ -100,7 +109,12 @@
     &__note {
         display: none;
         color: #FFFFFF;
-        max-width: 600px;
+       
+
+
+@include lg-min {
+     max-width: 600px;
+}
 
         &.active {
             display: block;
@@ -108,35 +122,66 @@
     }
 
     &__title {
-
         margin-bottom: 20px;
+
 
         @include lg-min {
             font-size: 32px;
             line-height: 38px;
+
         }
 
         @include lg {
             font-size: 22px;
-            line-height: 26px
+            line-height: 26px;
+            margin-bottom: 15px;
         }
     }
 
     &__descption {
-        font-size: 21px;
-        line-height: 30px;
 
+        @include lg-min {
+            font-size: 21px;
+            line-height: 30px;
+        }
 
         @include lg {
             font-size: 18px;
             line-height: 26px;
+            margin-bottom: $gap;
         }
 
     }
 
     &__indicators {
-        display: flex;
+
+        @include lg-min {
+            display: none;
+        }
+
+        @include lg {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+
+
+
+        }
+
+
+
+
     }
 
-    &__indicator {}
+    &__indicator {
+        width: 16px;
+        height: 16px;
+        background: #24A3FF;
+        opacity: 0.2;
+        border-radius: 8px;
+
+        &.active {
+            opacity: 1;
+        }
+    }
 }
