@@ -510,15 +510,6 @@ ul {
 
   color: #b3b3ba;
 }
-.slider__header.active {
-  background: -o-linear-gradient(359.87deg, #ef8080 0.84%, #f0145a 99.96%);
-  background:    linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
-  -webkit-background-clip: text;
-          background-clip: text;
-
-  -webkit-text-fill-color: transparent;
-          text-fill-color: transparent;
-}
 .slider__notes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,6 +574,15 @@ ul {
     font-size: 42px;
     line-height: 50px;
   }
+  .slider__header.active span {
+    background: -o-linear-gradient(359.87deg, #ef8080 0.84%, #f0145a 99.96%);
+    background:    linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+    -webkit-background-clip: text;
+            background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+  }
   .slider__header.active::after {
     position: absolute;
     z-index: 1;
@@ -626,13 +626,14 @@ ul {
     letter-spacing: 1px;
     text-transform: uppercase;
 
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .slider__header span {
     background: -o-linear-gradient(359.87deg, #ef8080 0.84%, #f0145a 99.96%);
     background:    linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
     -webkit-background-clip: text;
             background-clip: text;
-
-    font-size: 14px;
-    line-height: 17px;
 
     -webkit-text-fill-color: transparent;
             text-fill-color: transparent;

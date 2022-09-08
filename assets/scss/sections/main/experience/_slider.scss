@@ -62,21 +62,32 @@ $size: 16px;
             line-height: 17px;
             letter-spacing: 1px;
             text-transform: uppercase;
-            background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
+
+            span {
+                background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+
 
         }
 
 
+
         &.active {
-            background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
+
+            @include lg-min {
+                span {
+                    
+                    background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                }
+            }
 
             @include lg {
                 display: block;
@@ -109,12 +120,12 @@ $size: 16px;
     &__note {
         display: none;
         color: #FFFFFF;
-       
 
 
-@include lg-min {
-     max-width: 600px;
-}
+
+        @include lg-min {
+            max-width: 600px;
+        }
 
         &.active {
             display: block;
