@@ -1,0 +1,18 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+
+.experience {
+    background-color: $color-primary;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @include lg {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    &__container {}
+
+
+}
