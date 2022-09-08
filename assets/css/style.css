@@ -586,6 +586,7 @@ ul {
   .slider__header.active::after {
     position: absolute;
     z-index: 1;
+    top: 0;
     right: -42px;
 
     width: 4px;

@@ -2,12 +2,11 @@
 @use "../../mixins" as *;
 
 .header-logo__button {
-    cursor: pointer;
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
-}
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 50%;
 
-.header-logo__button-image {}
+  cursor: pointer;
+  transform: translateX(-50%);
+}

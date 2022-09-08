@@ -1,198 +1,176 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
-
 $size: 16px;
 
 .slider {
-    display: flex;
+  display: flex;
 
+  @include lg-min {
+    gap: 80px;
+  }
+  @include lg {
+    flex-direction: column;
+  }
+
+  &__headers {
+    position: relative;
+
+    display: flex;
+    flex-basis: 0;
+    flex-direction: column;
+    flex-grow: 2;
+
+    gap: 20px;
+    @include lg-min {
+      &::after {
+        position: absolute;
+        right: -42px;
+
+        width: 4px;
+        height: 100%;
+
+        content: "";
+
+        background-color: $color-gray-separator;
+      }
+    }
+  }
+
+  &__header {
+    position: relative;
+
+    color: #b3b3ba;
 
     @include lg-min {
-        gap: 80px;
+      text-align: right;
+
+      font-size: 42px;
+      line-height: 50px;
     }
-
-
     @include lg {
-        flex-direction: column;
+      display: none;
 
-    }
+      margin-bottom: 10px;
 
+      letter-spacing: 1px;
+      text-transform: uppercase;
 
+      font-size: 14px;
+      line-height: 17px;
 
-    &__headers {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        flex-basis: 0;
-        flex-grow: 2;
-
-        @include lg-min {
-            &::after {
-                content: "";
-                position: absolute;
-                right: -42px;
-                width: 4px;
-                height: 100%;
-                background-color: $color-gray-separator;
-            }
-        }
-
-
-
-    }
-
-    &__header {
-        position: relative;
-
-        color: #B3B3BA;
-
-
-        @include lg-min {
-            font-size: 42px;
-            line-height: 50px;
-            text-align: right;
-        }
-
-        @include lg {
-            display: none;
-            margin-bottom: 10px;
-
-            font-size: 14px;
-            line-height: 17px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-
-            span {
-                background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+      span {
+        background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+        -webkit-background-clip: text;
                 background-clip: text;
+
+        -webkit-text-fill-color: transparent;
                 text-fill-color: transparent;
-            }
-
-
-        }
-
-
-
-        &.active {
-
-            @include lg-min {
-                span {
-                    
-                    background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                    text-fill-color: transparent;
-                }
-            }
-
-            @include lg {
-                display: block;
-            }
-
-            @include lg-min {
-                &::after {
-                    content: "";
-                    position: absolute;
-                    z-index: 1;
-                    right: -42px;
-                    width: 4px;
-                    height: 100%;
-                    background-color: $color-accent;
-                }
-            }
-
-        }
+      }
     }
 
+    &.active {
+      @include lg-min {
+        span {
+          background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+          -webkit-background-clip: text;
+                  background-clip: text;
 
-    &__notes {
-        display: flex;
-        align-items: center;
-        flex-basis: 0;
-        flex-grow: 3;
+          -webkit-text-fill-color: transparent;
+                  text-fill-color: transparent;
+        }
+      }
+      @include lg {
+        display: block;
+      }
+      @include lg-min {
+        &::after {
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          right: -42px;
 
+          width: 4px;
+          height: 100%;
+
+          content: "";
+
+          background-color: $color-accent;
+        }
+      }
+    }
+  }
+
+  &__notes {
+    display: flex;
+    align-items: center;
+    flex-basis: 0;
+    flex-grow: 3;
+  }
+
+  &__note {
+    display: none;
+
+    color: #ffffff;
+
+    @include lg-min {
+      max-width: 600px;
     }
 
-    &__note {
-        display: none;
-        color: #FFFFFF;
-
-
-
-        @include lg-min {
-            max-width: 600px;
-        }
-
-        &.active {
-            display: block;
-        }
+    &.active {
+      display: block;
     }
+  }
 
-    &__title {
-        margin-bottom: 20px;
+  &__title {
+    margin-bottom: 20px;
 
-
-        @include lg-min {
-            font-size: 32px;
-            line-height: 38px;
-
-        }
-
-        @include lg {
-            font-size: 22px;
-            line-height: 26px;
-            margin-bottom: 15px;
-        }
+    @include lg-min {
+      font-size: 32px;
+      line-height: 38px;
     }
+    @include lg {
+      margin-bottom: 15px;
 
-    &__descption {
-
-        @include lg-min {
-            font-size: 21px;
-            line-height: 30px;
-        }
-
-        @include lg {
-            font-size: 18px;
-            line-height: 26px;
-            margin-bottom: $gap;
-        }
-
+      font-size: 22px;
+      line-height: 26px;
     }
+  }
 
-    &__indicators {
-
-        @include lg-min {
-            display: none;
-        }
-
-        @include lg {
-            display: flex;
-            justify-content: center;
-            gap: 14px;
-
-
-
-        }
-
-
-
-
+  &__descption {
+    @include lg-min {
+      font-size: 21px;
+      line-height: 30px;
     }
+    @include lg {
+      margin-bottom: $gap;
 
-    &__indicator {
-        width: 16px;
-        height: 16px;
-        background: #24A3FF;
-        opacity: 0.2;
-        border-radius: 8px;
-
-        &.active {
-            opacity: 1;
-        }
+      font-size: 18px;
+      line-height: 26px;
     }
+  }
+
+  &__indicators {
+    @include lg-min {
+      display: none;
+    }
+    @include lg {
+      display: flex;
+      justify-content: center;
+
+      gap: 14px;
+    }
+  }
+
+  &__indicator {
+    width: 16px;
+    height: 16px;
+
+    opacity: 0.2;
+    border-radius: 8px;
+    background: #24a3ff;
+
+    &.active {
+      opacity: 1;
+    }
+  }
 }

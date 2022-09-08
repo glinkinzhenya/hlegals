@@ -4,18 +4,15 @@
 
 
 .header-menu__logo {
-    grid-area: logo;
+  grid-area: logo;
 }
 
 .logo {
+  &__image {
+    width: 155px;
 
-    &__picture {}
-
-    &__image {
-        width: 155px;
-
-        @include sm {
-            width: 78px;
-        }
+    @include sm {
+      width: 78px;
     }
+  }
 }

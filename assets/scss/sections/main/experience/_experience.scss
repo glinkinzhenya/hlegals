@@ -3,16 +3,13 @@
 
 
 .experience {
-    background-color: $color-primary;
-    padding-top: 80px;
-    padding-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
-    @include lg {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
+  background-color: $color-primary;
 
-    &__container {}
-
-
+  @include lg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }

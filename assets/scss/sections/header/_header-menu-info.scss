@@ -2,79 +2,77 @@
 @use "../../mixins" as *;
 
 .header-menu__info {
-    grid-area: info;
-    display: flex;
-    gap: $gap;
-    align-items: center;
-    flex-wrap: wrap;
-    // justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 
-    @include md {
-        a {
-            color: $color-gray-text;
-        }
+  gap: $gap;
+  grid-area: info;
+  // justify-content: center;
+  @include md {
+    a {
+      color: $color-gray-text;
     }
-
-    @include sm {
-        justify-content: space-between;
-    }
+  }
+  @include sm {
+    justify-content: space-between;
+  }
 }
 
 .info {
+  &__language-link {
+    padding: 6px 8px;
 
-    &__language {}
+    color: #ffffff;
+    border-radius: 10px;
 
-    &__language-link {
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 14px;
-        color: #FFFFFF;
-        padding: 6px 8px;
-        border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
 
-        &:hover {
-            color: $color-accent;
-
-        }
-
-        &.active {
-            background-color: $color-accent;
-            color: $color-white;
-        }
-
+    &:hover {
+      color: $color-accent;
     }
 
-    &__address {
-        @include sm {
-            display: none;
-        }
+    &.active {
+      color: $color-white;
+      background-color: $color-accent;
     }
+  }
 
-    &__address-link {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #ffffff;
+  &__address {
+    @include sm {
+      display: none;
     }
+  }
 
-    &__phone {}
+  &__address-link {
+    color: #ffffff;
 
-    &__phone-link {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 19px;
-        color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+
+
+  &__phone-link {
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+  }
+
+  &__social {
+    @include md {
+      display: none;
     }
+  }
 
-    &__social {
-        @include md {
-            display: none;
-        }
-    }
 
-    &__social-link {}
 
-    &__social-image {
-        width: 24px;
-    }
+  &__social-image {
+    width: 24px;
+  }
 }

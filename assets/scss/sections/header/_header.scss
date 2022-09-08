@@ -2,56 +2,60 @@
 @use "../../mixins" as *;
 
 .header {
-    height: 100vh;
-    background: $bg-gradient-1;
-    position: relative;
-    overflow: hidden;
+  position: relative;
 
-    &::before {
-        content: "";
-        background-repeat: no-repeat;
-        background-position: 50% 100%;
-        background-size: 85vh, 70vh;
-        background-image: url(../img/logobackground.svg);
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
+  overflow: hidden;
 
-    &::after {
-        content: "";
-        background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
-        @include abs-position(70%);
-    }
+  height: 100vh;
+
+  background: $bg-gradient-1;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: "";
+
+    background-image: url(../img/logobackground.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 85vh, 70vh;
+  }
+
+  &::after {
+    content: "";
+
+    background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+
+    @include abs-position(70%);
+  }
 }
 
 .header-menu {
-    display: grid;
-    justify-content: space-between;
-    grid-template-areas: "logo info"
-        "logo nav";
-    padding-top: 50px;
-    gap: 0 $gap;
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 
-    @include md {
-        gap: $gap;
-        grid-template-areas:
-            "info info"
-            "logo logo"
-            "nav nav";
-        padding-top: 20px;
-    }
+  display: grid;
+  justify-content: space-between;
 
-  @include sm {
-      
-      grid-template-areas:
-          "info info"
-          "logo nav";
-      
+  padding-top: 50px;
+
+  gap: 0 $gap;
+  grid-template-areas: "logo info"
+  "logo nav";
+  @include md {
+    padding-top: 20px;
+
+    gap: $gap;
+    grid-template-areas: "info info"
+    "logo logo"
+    "nav nav";
   }
-
+  @include sm {
+    grid-template-areas: "info info"
+    "logo nav";
+  }
 }
