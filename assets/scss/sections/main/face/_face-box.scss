@@ -8,10 +8,16 @@
     display: flex;
     gap: 40px;
     border-radius: 12px;
+    margin-bottom: 20px;
 
 
 
-    &__picture {}
+    &__picture {
+
+        @include lg {
+            display: none;
+        }
+    }
 
     &__image {}
 }
@@ -19,6 +25,15 @@
 .face-contant {
     padding-top: 40px;
     padding-bottom: 40px;
+    @include lg {
+            padding-left: 20px;
+                padding-right: 20px;
+    }
+
+
+    &__flex {
+        display: flex;
+    }
 
     &__title {
         font-weight: 700;
@@ -30,6 +45,11 @@
         background-clip: text;
         text-fill-color: transparent;
         padding-bottom: 20px;
+
+        @include lg {
+font-size: 32px;
+    line-height: 38px;
+        }
     }
 
     &__name {
@@ -56,8 +76,10 @@
 
 }
 
-.face-indicators {
-    &__link {
+.face-contant__indicators {
+}
+
+        .face-contant__link {
         font-weight: 700;
         font-size: 14px;
         line-height: 17px;
@@ -69,6 +91,15 @@
         /* Active / Regular */
 
         color: #24A3FF;
+    }
+
+
+.face-contant__flex-pictures {
+    margin-right: 10px;
+    display: none;
+
+    @include lg {
+        display: block;
     }
 }
 
