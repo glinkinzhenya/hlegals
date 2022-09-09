@@ -1,0 +1,77 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+
+
+.face-box {
+    background-color: #f5f5fa;
+    display: flex;
+    gap: 40px;
+    border-radius: 12px;
+
+
+
+    &__picture {}
+
+    &__image {}
+}
+
+.face-contant {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 50px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        padding-bottom: 20px;
+    }
+
+    &__name {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+
+        color: #B3B3BA;
+        padding-bottom: 5px;
+    }
+
+    &__about {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height, or 138% */
+
+
+        /* Grey / Text */
+
+        color: #B3B3BA;
+    }
+
+
+}
+
+.face-indicators {
+    &__link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        /* Active / Regular */
+
+        color: #24A3FF;
+    }
+}
+
+
+
+
