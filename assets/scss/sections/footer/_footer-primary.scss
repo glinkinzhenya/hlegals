@@ -8,6 +8,15 @@
 
 .footer-primary {}
 
+.footer-primary__box {
+    display: grid;
+    gap: 40px;
+        grid-template-areas: "a1 a2 a3"
+            "a4 a2 a3"
+            "a4 a5 a6";
+        //grid-template-columns: repeat(3, 1fr);
+}
+
 .footer-primary__action {}
 
 .footer-primary__link {
