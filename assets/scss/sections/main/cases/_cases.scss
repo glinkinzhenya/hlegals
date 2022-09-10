@@ -1,62 +1,67 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
 
-.cases {}
+.cases {
+    // max-width: 1320px;
+    //     margin-right: auto;
+    //     margin-left: auto;
+    //     padding-right: 20px;
+    //     padding-left: 20px;
+    //     height: 453px;
+    
+        display: grid;
+        grid-template-areas: "a1 a1 a3 a3 a4"
+            "a2 a2 a3 a3 a4"
+            "a5 a6 a6 a7 a7";
+        grid-template-columns: 24% 9% 1fr 8.5% 33%;
+        grid-template-rows: 12% 1fr 1fr;
+}
 
 .cases-container {
-    background: #9898a0;
-    border: 1px solid #FFFFFF;
-    border-radius: 12px;
 
-    max-width: 1320px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 20px;
-    padding-left: 20px;
-
-    display: grid;
-    grid-template-areas: "a1 a1 a3 a3 a4"
-    "a2 a2 a3 a3 a4"
-    "a5 a6 a6  a7 a7"
- 
-
-
-
+   
 }
 
-.cases-container>div:nth-of-type(1) {
+.cases>div:nth-of-type(1) {
     grid-area: a1;
-    background-color: rgb(75, 0, 128);
+    border: 1px solid #FFFFFF;
+    border-radius: 12px 0px 0px 0px;
+
+justify-content: center;
 }
 
-.cases-container>div:nth-of-type(2) {
+.cases>div:nth-of-type(2) {
     grid-area: a2;
-    background-color: rgb(73, 89, 216);
+    border: 1px solid #FFFFFF;
+    
 }
 
-.cases-container>div:nth-of-type(3) {
+.cases>div:nth-of-type(3) {
     grid-area: a3;
-    background-color: rgb(21, 235, 32);
+    border: 1px solid #FFFFFF;
 }
 
-.cases-container>div:nth-of-type(4) {
+.cases>div:nth-of-type(4) {
     grid-area: a4;
-    background-color: rgb(167, 233, 24);
+    border-radius: 0px 12px 0px 0px;
+    border: 1px solid #FFFFFF;
 }
 
-.cases-container>div:nth-of-type(5) {
+.cases>div:nth-of-type(5) {
     grid-area: a5;
-    background-color: rgb(241, 11, 26);
+    border: 1px solid #FFFFFF;
+    border-radius: 0px 0px 0px 12px;
 }
 
-.cases-container>div:nth-of-type(6) {
+.cases>div:nth-of-type(6) {
     grid-area: a6;
-    background-color: rgb(88, 18, 239);
+    border: 1px solid #FFFFFF;
 }
 
-.cases-container>div:nth-of-type(7) {
+.cases>div:nth-of-type(7) {
     grid-area: a7;
-    background-color: rgb(52, 158, 128);
+    border: 1px solid #FFFFFF;
+    border-radius: 0px 0px 12px 0px;
 }
 
 
@@ -64,16 +69,16 @@
     display: flex;
     padding: 20px;
     flex-direction: column;
+    background-color: #F5F5FA;
+    justify-content: flex-end;
 
     &__title {
         font-size: 14px;
         line-height: 17px;
 
-        text-align: center;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #F0145A;
-        grid-area: ttl;
     }
 
     &__description {
@@ -82,13 +87,12 @@
         display: flex;
         align-items: flex-end;
         color: #686887;
-        grid-area: des;
+        margin-bottom: 20px;
     }
 
     &__notes {
         font-size: 18px;
         line-height: 26px;
         color: #B3B3BA;
-        grid-area: nts;
     }
 }

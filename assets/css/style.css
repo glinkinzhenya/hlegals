@@ -673,6 +673,7 @@ ul {
 .face-indicator {
   width: 16px;
   height: 16px;
+  margin-bottom: 40px;
 
   opacity: 0.2;
   border-radius: 8px;
@@ -752,60 +753,60 @@ ul {
   margin-right: 10px;
 }
 
-.cases-container {
+.cases {
   display: grid;
 
-  max-width: 1320px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-
-  border: 1px solid #ffffff;
-  border-radius: 12px;
-  background: #9898a0;
-
-  grid-template-areas: "a1 a1 a3 a3 a4" "a2 a2 a3 a3 a4" "a5 a6 a6  a7 a7";
+  grid-template-areas: "a1 a1 a3 a3 a4" "a2 a2 a3 a3 a4" "a5 a6 a6 a7 a7";
+  grid-template-columns: 24% 9% 1fr 8.5% 33%;
+  grid-template-rows: 12% 1fr 1fr;
 }
 
-.cases-container > div:nth-of-type(1) {
-  background-color: rgb(75, 0, 128);
+.cases > div:nth-of-type(1) {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  border: 1px solid #ffffff;
+  border-radius: 12px 0 0 0;
 
   grid-area: a1;
 }
 
-.cases-container > div:nth-of-type(2) {
-  background-color: rgb(73, 89, 216);
+.cases > div:nth-of-type(2) {
+  border: 1px solid #ffffff;
 
   grid-area: a2;
 }
 
-.cases-container > div:nth-of-type(3) {
-  background-color: rgb(21, 235, 32);
+.cases > div:nth-of-type(3) {
+  border: 1px solid #ffffff;
 
   grid-area: a3;
 }
 
-.cases-container > div:nth-of-type(4) {
-  background-color: rgb(167, 233, 24);
+.cases > div:nth-of-type(4) {
+  border: 1px solid #ffffff;
+  border-radius: 0 12px 0 0;
 
   grid-area: a4;
 }
 
-.cases-container > div:nth-of-type(5) {
-  background-color: rgb(241, 11, 26);
+.cases > div:nth-of-type(5) {
+  border: 1px solid #ffffff;
+  border-radius: 0 0 0 12px;
 
   grid-area: a5;
 }
 
-.cases-container > div:nth-of-type(6) {
-  background-color: rgb(88, 18, 239);
+.cases > div:nth-of-type(6) {
+  border: 1px solid #ffffff;
 
   grid-area: a6;
 }
 
-.cases-container > div:nth-of-type(7) {
-  background-color: rgb(52, 158, 128);
+.cases > div:nth-of-type(7) {
+  border: 1px solid #ffffff;
+  border-radius: 0 0 12px 0;
 
   grid-area: a7;
 }
@@ -818,11 +819,15 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
       flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 
   padding: 20px;
+
+  background-color: #f5f5fa;
 }
 .cases-section__title {
-  text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
 
@@ -830,8 +835,6 @@ ul {
 
   font-size: 14px;
   line-height: 17px;
-
-  grid-area: ttl;
 }
 .cases-section__description {
   display: -webkit-box;
@@ -841,20 +844,18 @@ ul {
   align-items: flex-end;
   -ms-flex-align: end;
 
+  margin-bottom: 20px;
+
   color: #686887;
 
   font-size: 24px;
   line-height: 28px;
-
-  grid-area: des;
 }
 .cases-section__notes {
   color: #b3b3ba;
 
   font-size: 18px;
   line-height: 26px;
-
-  grid-area: nts;
 }
 @media (min-width: 576px) {
   .header-logo__title {
