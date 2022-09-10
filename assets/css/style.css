@@ -752,12 +752,115 @@ ul {
   margin-right: 10px;
 }
 
+.cases-container {
+  display: grid;
+
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  background: #9898a0;
+
+  grid-template-areas: "a1 a1 a3 a3 a4" "a2 a2 a3 a3 a4" "a5 a6 a6  a7 a7";
+}
+
+.cases-container > div:nth-of-type(1) {
+  background-color: rgb(75, 0, 128);
+
+  grid-area: a1;
+}
+
+.cases-container > div:nth-of-type(2) {
+  background-color: rgb(73, 89, 216);
+
+  grid-area: a2;
+}
+
+.cases-container > div:nth-of-type(3) {
+  background-color: rgb(21, 235, 32);
+
+  grid-area: a3;
+}
+
+.cases-container > div:nth-of-type(4) {
+  background-color: rgb(167, 233, 24);
+
+  grid-area: a4;
+}
+
+.cases-container > div:nth-of-type(5) {
+  background-color: rgb(241, 11, 26);
+
+  grid-area: a5;
+}
+
+.cases-container > div:nth-of-type(6) {
+  background-color: rgb(88, 18, 239);
+
+  grid-area: a6;
+}
+
+.cases-container > div:nth-of-type(7) {
+  background-color: rgb(52, 158, 128);
+
+  grid-area: a7;
+}
+
+.cases-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+
+  padding: 20px;
+}
+.cases-section__title {
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #f0145a;
+
+  font-size: 14px;
+  line-height: 17px;
+
+  grid-area: ttl;
+}
+.cases-section__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  align-items: flex-end;
+  -ms-flex-align: end;
+
+  color: #686887;
+
+  font-size: 24px;
+  line-height: 28px;
+
+  grid-area: des;
+}
+.cases-section__notes {
+  color: #b3b3ba;
+
+  font-size: 18px;
+  line-height: 26px;
+
+  grid-area: nts;
+}
 @media (min-width: 576px) {
   .header-logo__title {
     width: 600px;
   }
 }
-
 @media (min-width: 992px) {
   .slider {
     gap: 80px;
@@ -819,7 +922,6 @@ ul {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 @media (max-width: 991.8px) {
   .slider {
     -webkit-box-orient: vertical;
@@ -891,14 +993,12 @@ ul {
     display: block;
   }
 }
-
 @media (max-width: 991.8px) and (min-width: 576px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
 }
-
 @media (max-width: 767.8px) {
   .header-menu {
     padding-top: 20px;
@@ -918,7 +1018,6 @@ ul {
     justify-content: flex-start;
   }
 }
-
 @media (max-width: 575.8px) {
   .header-menu {
     grid-template-areas: "info info" "logo nav";

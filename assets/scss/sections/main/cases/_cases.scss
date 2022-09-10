@@ -1,0 +1,94 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.cases {}
+
+.cases-container {
+    background: #9898a0;
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    display: grid;
+    grid-template-areas: "a1 a1 a3 a3 a4"
+    "a2 a2 a3 a3 a4"
+    "a5 a6 a6  a7 a7"
+ 
+
+
+
+}
+
+.cases-container>div:nth-of-type(1) {
+    grid-area: a1;
+    background-color: rgb(75, 0, 128);
+}
+
+.cases-container>div:nth-of-type(2) {
+    grid-area: a2;
+    background-color: rgb(73, 89, 216);
+}
+
+.cases-container>div:nth-of-type(3) {
+    grid-area: a3;
+    background-color: rgb(21, 235, 32);
+}
+
+.cases-container>div:nth-of-type(4) {
+    grid-area: a4;
+    background-color: rgb(167, 233, 24);
+}
+
+.cases-container>div:nth-of-type(5) {
+    grid-area: a5;
+    background-color: rgb(241, 11, 26);
+}
+
+.cases-container>div:nth-of-type(6) {
+    grid-area: a6;
+    background-color: rgb(88, 18, 239);
+}
+
+.cases-container>div:nth-of-type(7) {
+    grid-area: a7;
+    background-color: rgb(52, 158, 128);
+}
+
+
+.cases-section {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+
+    &__title {
+        font-size: 14px;
+        line-height: 17px;
+
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #F0145A;
+        grid-area: ttl;
+    }
+
+    &__description {
+        font-size: 24px;
+        line-height: 28px;
+        display: flex;
+        align-items: flex-end;
+        color: #686887;
+        grid-area: des;
+    }
+
+    &__notes {
+        font-size: 18px;
+        line-height: 26px;
+        color: #B3B3BA;
+        grid-area: nts;
+    }
+}
