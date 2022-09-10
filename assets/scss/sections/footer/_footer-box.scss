@@ -1,0 +1,17 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+
+.box-section {
+    display: grid;
+    grid-template-areas: "ttl"
+            "dsc"
+}
+
+.box-section__title {}
+
+.box-section__link {}
+
+.box-section__date {}
+
+.box-section__description {}

@@ -1,0 +1,33 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+
+.footer {
+    background-color: #f5f5fa;
+}
+
+.footer-primary {}
+
+.footer-primary__action {}
+
+.footer-primary__link {
+    font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #24A3FF;
+        margin-top: 40px;
+}
+
+.footer-primary__title {
+    font-weight: 700;
+        font-size: 42px;
+        line-height: 50px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-bottom: 40px;
+}

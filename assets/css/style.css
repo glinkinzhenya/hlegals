@@ -882,11 +882,52 @@ ul {
   width: 100%;
   height: 100%;
 }
+
+.box-section {
+  display: grid;
+
+  grid-template-areas: "ttl" "dsc";
+}
+
+.footer {
+  background-color: #f5f5fa;
+}
+
+.footer-primary__link {
+  margin-top: 40px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #24a3ff;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+}
+
+.footer-primary__title {
+  margin-bottom: 40px;
+
+  background: -o-linear-gradient(359.87deg, #f0145a 0.84%, #ef8080 99.96%);
+  background:    linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50px;
+
+  -webkit-text-fill-color: transparent;
+          text-fill-color: transparent;
+}
+
 @media (min-width: 576px) {
   .header-logo__title {
     width: 600px;
   }
 }
+
 @media (min-width: 992px) {
   .slider {
     gap: 80px;
@@ -958,6 +999,7 @@ ul {
     justify-content: flex-end;
   }
 }
+
 @media (max-width: 991.8px) {
   .slider {
     -webkit-box-orient: vertical;
@@ -1048,12 +1090,14 @@ ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 991.8px) and (min-width: 576px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
 }
+
 @media (max-width: 767.8px) {
   .header-menu {
     padding-top: 20px;
@@ -1083,6 +1127,7 @@ ul {
     border-radius: 0 0 12px 12px;
   }
 }
+
 @media (max-width: 575.8px) {
   .header-menu {
     grid-template-areas: "info info" "logo nav";
