@@ -2,38 +2,55 @@
 @use "../../../mixins" as *;
 
 .cases {
-    // max-width: 1320px;
-    //     margin-right: auto;
-    //     margin-left: auto;
-    //     padding-right: 20px;
-    //     padding-left: 20px;
-    //     height: 453px;
-    
-        display: grid;
+    display: grid;
+
+    @include lg-min {
+
         grid-template-areas: "a1 a1 a3 a3 a4"
             "a2 a2 a3 a3 a4"
             "a5 a6 a6 a7 a7";
         grid-template-columns: 24% 9% 1fr 8.5% 33%;
         grid-template-rows: 12% 1fr 1fr;
+    }
+
+    @include lg {
+        grid-template-areas: "a1 a1 "
+            "a2 a3"
+            "a4 a5"
+            "a6 a7";
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include md {
+        grid-template-areas: "a1"
+            "a2"
+            "a3"
+            "a4"
+            "a5"
+            "a6"
+            "a7";
+        grid-template-columns: 1fr;
+    }
 }
 
-.cases-container {
 
-   
-}
+.cases-container {}
 
 .cases>div:nth-of-type(1) {
     grid-area: a1;
     border: 1px solid #FFFFFF;
     border-radius: 12px 0px 0px 0px;
+    justify-content: center;
 
-justify-content: center;
+    @include lg {
+        border-radius: 12px 12px 0px 0px;
+    }
 }
 
 .cases>div:nth-of-type(2) {
     grid-area: a2;
     border: 1px solid #FFFFFF;
-    
+
 }
 
 .cases>div:nth-of-type(3) {
@@ -45,23 +62,43 @@ justify-content: center;
     grid-area: a4;
     border-radius: 0px 12px 0px 0px;
     border: 1px solid #FFFFFF;
+
+    @include lg {
+        border-radius: 0;
+    }
 }
 
 .cases>div:nth-of-type(5) {
     grid-area: a5;
     border: 1px solid #FFFFFF;
     border-radius: 0px 0px 0px 12px;
+
+    @include lg {
+        border-radius: 0;
+    }
 }
 
 .cases>div:nth-of-type(6) {
     grid-area: a6;
     border: 1px solid #FFFFFF;
+
+    @include lg {
+        border-radius: 0px 0px 0px 12px;
+    }
+
+    @include md {
+        border-radius: 0px 0px 0px 0px;
+    }
 }
 
 .cases>div:nth-of-type(7) {
     grid-area: a7;
     border: 1px solid #FFFFFF;
     border-radius: 0px 0px 12px 0px;
+
+    @include md {
+        border-radius: 0px 0px 12px 12px;
+    }
 }
 
 
@@ -70,7 +107,16 @@ justify-content: center;
     padding: 20px;
     flex-direction: column;
     background-color: #F5F5FA;
-    justify-content: flex-end;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #9292a364;
+        border-radius: 10px!important; 
+    }
+
+    @include lg-min {
+        justify-content: flex-end;
+    }
 
     &__title {
         font-size: 14px;
