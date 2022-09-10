@@ -1,0 +1,41 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.brands {}
+
+.brands__title {
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #323264;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.brands {
+
+
+    &-box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        @include lg {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &-section {
+        &:hover {
+            box-shadow: 0 0 8px black;;
+        }
+    }
+
+    &-section__image {
+        height: 100%;
+        width: 100%;
+    }
+}
