@@ -1,7 +1,11 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
 
-.brands {}
+.brands {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .brands__title {
     font-size: 14px;
@@ -30,7 +34,8 @@
 
     &-section {
         &:hover {
-            box-shadow: 0 0 8px black;;
+            box-shadow: 0 0 8px black;
+            ;
         }
     }
 
