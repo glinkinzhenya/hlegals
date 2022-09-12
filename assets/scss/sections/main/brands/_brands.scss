@@ -2,45 +2,43 @@
 @use "../../../mixins" as *;
 
 .brands {
-    max-width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .brands__title {
-    font-size: 14px;
-    line-height: 17px;
+  margin: 20px;
 
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 
-    color: #323264;
-    margin: 20px;
-    text-align: center;
+  color: #323264;
 
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .brands {
+  &-box {
+    display: grid;
 
-
-    &-box {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-
-        @include lg {
-            grid-template-columns: repeat(2, 1fr);
-        }
+    grid-template-columns: repeat(4, 1fr);
+    @include lg {
+      grid-template-columns: repeat(2, 1fr);
     }
+  }
 
-    &-section {
-        &:hover {
-            box-shadow: 0 0 8px black;
-            ;
-        }
+  &-section {
+    &:hover {
+      box-shadow: 0 0 8px black;
+      ;
     }
+  }
 
-    &-section__image {
-        height: 100%;
-        width: 100%;
-    }
+  &-section__image {
+    width: 100%;
+    height: 100%;
+  }
 }

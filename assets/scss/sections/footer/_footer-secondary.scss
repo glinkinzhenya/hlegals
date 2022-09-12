@@ -2,112 +2,124 @@
 @use "../../mixins" as *;
 
 .footer-secondary {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  background-color: #f5f5fa;
+
+  gap: $gap;
+  @include md {
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+
+
+  &__info {
     display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    position: relative;
+    flex-direction: column;
+
     gap: $gap;
-    background-color: #F5F5FA;
-
-    @include md {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-
-
-    &__info {
-        display: flex;
-        gap: $gap;
-        flex-direction: column;
-    }
-
+  }
 }
 
 .footer-secondary::after {
-    position: absolute;
-    content: "";
-    height: 4px;
-    background-color: #E6E6F0;
-    left: 20px;
-    right: 20px;
-    top: 0;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  left: 20px;
+
+  height: 4px;
+
+  content: "";
+
+  background-color: #e6e6f0;
 }
 
 .info-contact {
-    display: flex;
-    gap: $gap;
+  display: flex;
 
-    @include sm {
-        flex-direction: column;
-        align-items: center;
-    }
+  gap: $gap;
+  @include sm {
+    align-items: center;
+    flex-direction: column;
+  }
 
 
-    &__address {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #323264;
-    }
+  &__address {
+    color: #323264;
 
-    &__action {}
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
 
-    &__link {
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 14px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: #24A3FF;
-    }
+
+
+  &__link {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #24a3ff;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+  }
 }
 
 .info-social {
-    display: flex;
-    gap: $gap;
+  display: flex;
+  align-items: center;
+
+  gap: $gap;
+  @include sm {
     align-items: center;
+    flex-direction: column;
+  }
 
-    @include sm {
-        align-items: center;
-        flex-direction: column;
-    }
 
-    &__facebook {}
 
-    &__facebook-link {}
 
-    &__facebook-image {}
 
-    &__number {}
 
-    &__number-tel {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 19px;
 
-        color: #46466E;
-    }
 
-    &__mail {}
 
-    &__mail-link {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 19px;
-        color: #24A3FF;
-    }
+  &__number-tel {
+    color: #46466e;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+  }
+
+
+
+  &__mail-link {
+    color: #24a3ff;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+  }
 }
 
 .footer-secondary__copyright {
-    font-size: 16px;
-    line-height: 19px;
-    color: #B3B3BA;
+  color: #b3b3ba;
 
-    @include sm {
-        max-width: 297px;
-        text-align: center;
-    }
+  font-size: 16px;
+  line-height: 19px;
+
+  @include sm {
+    max-width: 297px;
+
+    text-align: center;
+  }
 }

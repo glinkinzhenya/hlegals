@@ -3,56 +3,59 @@
 
 
 .services-block {
-    max-width: 413px;
-    display: grid;
-    grid-template-areas: "pic"
-        "tit"
-        "des";
-        gap: 20px 20px;
+  display: grid;
 
+  max-width: 413px;
 
+  gap: 20px 20px;
+  grid-template-areas: "pic"
+  "tit"
+  "des";
+  @include sm {
+    align-items: center;
+
+    gap: 0 10px;
+    grid-template-areas: "pic tit"
+    "des des";
+    grid-template-columns: auto 1fr;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    color: #24a3ff;
+
+    font-size: 24px;
+    line-height: 28px;
+
+    grid-area: tit;
     @include sm {
-        grid-template-areas: "pic tit"
-            "des des";
-        grid-template-columns: auto 1fr;
-        align-items: center;
-        gap: 0 10px;
+      font-size: 18px;
     }
+  }
 
-    &__title {
-        margin-bottom: 15px;
-        font-size: 24px;
-        line-height: 28px;
-        color: #24A3FF;
-        grid-area: tit;
+  &__picture {
+    // margin-bottom: 20px;
+    max-width: 64px;
 
-        @include sm {
-                font-size: 18px;
-            }
+    grid-area: pic;
+  }
+
+  &__image {
+    @include sm {
+      width: 64px;
     }
+  }
 
-    &__picture {
-       // margin-bottom: 20px;
-        max-width: 64px;
-        grid-area: pic;
+  &__description {
+    color: #ffffff;
 
+    font-size: 18px;
+    line-height: 26px;
 
+    grid-area: des;
+    @include sm {
+      font-size: 16px;
     }
-
-    &__image {
-        @include sm {
-            width: 64px;
-        }
-    }
-
-    &__description {
-        font-size: 18px;
-        line-height: 26px;
-        color: #FFFFFF;
-        grid-area: des;
-
-        @include sm {
-                font-size: 16px;
-            }
-    }
+  }
 }

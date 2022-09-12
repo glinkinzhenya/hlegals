@@ -8,9 +8,9 @@
   justify-content: center;
 
   min-height: 100vh;
-//position: relative;
+  //position: relative;
   &__image {
-  position: absolute;
+    position: absolute;
     // bottom: 0;
     // transform: scale(1);
     bottom: 0;
@@ -19,12 +19,12 @@
   &__title {
     position: absolute;
     top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    left: 50%;
 
-   width: 600px;
+    width: 600px;
+
+    transform: translate(-50%, -50%);
     // padding-bottom: 180px;
-
     text-align: center;
 
     color: #ffffff;
@@ -32,11 +32,12 @@
     font-size: 38px;
     font-weight: 500;
     line-height: 45px;
+
     @include sm-min {
       width: 600px;
     }
-            @include sm {
-              width: 420px;
-            }
+    @include sm {
+      width: 420px;
+    }
   }
 }

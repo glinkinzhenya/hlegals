@@ -1,30 +1,28 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
 
-.face-indicators {
 
-
-}
 
 
 
 
 .face-indicators {
   display: flex;
-        justify-content: center;
-        gap: 14px;
-   
+  justify-content: center;
+
+  gap: 14px;
 }
 
 .face-indicator {
-    width: 16px;
-    height: 16px;
-    opacity: 0.2;
-    border-radius: 8px;
-    background: #24a3ff;
-    margin-bottom: 40px;
+  width: 16px;
+  height: 16px;
+  margin-bottom: 40px;
 
-    &.active {
-        opacity: 1;
-    }
+  opacity: 0.2;
+  border-radius: 8px;
+  background: #24a3ff;
+
+  &.active {
+    opacity: 1;
+  }
 }

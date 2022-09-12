@@ -1,0 +1,44 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.header-white {
+  position: relative;
+
+  overflow: hidden;
+
+  height: 100vh;
+
+  background: #ffffff;
+ 
+
+
+
+}
+
+
+.header-menu {
+  position: relative;
+  z-index: 1;
+ 
+
+  display: grid;
+  justify-content: space-between;
+
+  padding-top: 50px;
+
+  gap: 0 $gap;
+  grid-template-areas: "logo info"
+  "logo nav";
+  @include md {
+    padding-top: 20px;
+
+    gap: $gap;
+    grid-template-areas: "info info"
+    "logo logo"
+    "nav nav";
+  }
+  @include sm {
+    grid-template-areas: "info info"
+    "logo nav";
+  }
+}
