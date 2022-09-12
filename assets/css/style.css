@@ -946,13 +946,27 @@ ul {
 
 .box-section__date {
   padding: 20px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #b3b3ba;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
 }
 
 .box-section__description {
-  padding: 20px;
+  padding: 21px;
   padding-top: 20px;
 
+  color: #000000;
   border-top: 1px solid #e6e6f0;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .box-section__picture {
@@ -971,14 +985,14 @@ ul {
   display: grid;
 
   gap: 40px;
-  grid-template-areas: "a1 a2 a3" "a4 a2 a3" "a4 a5 a6";
-  grid-template-rows: 30% 30% 40%;
+  grid-template-areas: "a1 a2 a3" "a4 a2 a3" "a4 a5 a3" "a4 a5 a6";
+  grid-template-rows: 39% 14% 0;
 }
 
 .footer-primary__box::after {
   position: absolute;
   top: 70%;
-  right: 0;
+  right: -5px;
   bottom: 0;
   left: 0;
 
