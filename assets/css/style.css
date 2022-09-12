@@ -1048,7 +1048,6 @@ ul {
 
 .footer-secondary {
   position: relative;
-  z-index: 2;
 
   display: -webkit-box;
   display: -ms-flexbox;
