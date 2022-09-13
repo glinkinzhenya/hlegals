@@ -1,0 +1,63 @@
+@use "../../../../presets" as *;
+@use "../../../../mixins" as *;
+
+
+.team-container {
+    position: relative;
+}
+.team {
+
+    &-picture {
+
+        &__image {
+        }
+    }
+
+    &-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 96px;
+        line-height: 113px;
+        text-align: center;
+        letter-spacing: 63px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        opacity: 0.8;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+    }
+}
+
+.team-block {
+    display: flex;
+    gap: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 641px;
+    }
+
+    &__description-text {
+        font-size: 21px;
+        line-height: 30px;
+        color: #000000;
+    }
+
+    &__title {
+        max-width: 414px;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 50px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+}

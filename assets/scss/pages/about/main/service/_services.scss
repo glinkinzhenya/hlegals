@@ -7,7 +7,7 @@
     gap: 20px;
     display: flex;
     justify-content: center;
-
+margin-bottom: 100px;
 }
 
 
@@ -38,7 +38,17 @@
 }
 
 .service-rating {
-    border-left: 1px solid black;
+position: relative;
+
+    &::after {
+       width: 4px;
+       position: absolute;
+       background-color: #E6E6F0;
+       content: "";
+       top: 7px;
+       left: -20px;
+       bottom: 60px;
+    }
 }
 
 
