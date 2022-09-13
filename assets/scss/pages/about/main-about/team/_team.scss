@@ -15,8 +15,8 @@
     max-width: 1440px;
 
     &__image {
-      height: 438px;
-      width: auto;
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -36,6 +36,12 @@
 
     font-size: 96px;
     line-height: 113px;
+
+    @include xl {
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: 20px;
+    }
   }
 }
 
@@ -51,11 +57,20 @@
 
   gap: 41px;
 
+  @include lg {
+    flex-direction: column;
+  }
+
+
   &__description {
     display: flex;
     flex-direction: column;
 
-    max-width: 641px;
+
+    @include lg-min {
+      max-width: 641px;
+    }
+
 
     gap: 20px;
   }
@@ -65,21 +80,36 @@
 
     font-size: 21px;
     line-height: 30px;
-      //font-weight: 500;
+    //font-weight: 500;
+
+    @include sm {
+      font-size: 18px;
+      line-height: 26px;
+    }
   }
 
   &__title {
-    max-width: 414px;
+
 
     background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
     -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
 
     font-size: 42px;
     font-weight: 700;
     line-height: 50px;
 
     -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
+    text-fill-color: transparent;
+
+    @include lg-min {
+      max-width: 414px;
+    }
+
+
+    @include md {
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
 }

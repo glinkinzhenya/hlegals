@@ -1503,8 +1503,8 @@ ul {
   max-width: 1440px;
 }
 .team-picture__image {
-  width: auto;
-  height: 438px;
+  width: 100%;
+  height: auto;
 }
 .team-title {
   position: absolute;
@@ -1551,8 +1551,6 @@ ul {
   -ms-flex-direction: column;
       flex-direction: column;
 
-  max-width: 641px;
-
   gap: 20px;
 }
 .team-block__description-text {
@@ -1562,8 +1560,6 @@ ul {
   line-height: 30px;
 }
 .team-block__title {
-  max-width: 414px;
-
   background: -o-linear-gradient(359.87deg, #f0145a 0.84%, #ef8080 99.96%);
   background:    linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
   -webkit-background-clip: text;
@@ -1608,6 +1604,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 
   margin-bottom: 30px;
 
@@ -1663,6 +1662,16 @@ ul {
 @media (min-width: 576px) {
   .header-logo__title {
     width: 600px;
+  }
+}
+
+@media (min-width: 768px) {
+  .primary-about .face-indicator--md {
+    display: none;
+  }
+  .primary-about__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -1744,6 +1753,12 @@ ul {
     grid-template-areas: "a1 a2 a3" "a4 a2 a3" "a4 a5 a3" "a4 a5 a6";
     grid-template-rows: 37% 17% 3%;
   }
+  .team-block__description {
+    max-width: 641px;
+  }
+  .team-block__title {
+    max-width: 414px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1781,6 +1796,12 @@ ul {
   }
   .rating-item {
     padding-top: 15px;
+  }
+  .team-title {
+    letter-spacing: 20px;
+
+    font-size: 36px;
+    line-height: 42px;
   }
 }
 
@@ -1892,6 +1913,12 @@ ul {
     grid-template-areas: "a1 a2" "a3 a2" "a3 a4" "a5 a4" "a5 a6";
     grid-template-rows: 20% 11% 21% 8% 35%;
   }
+  .team-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
 }
 
 @media (max-width: 991.8px) and (min-width: 576px) {
@@ -1962,6 +1989,13 @@ ul {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+  }
+  .team-block__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .primary-about .primary-about__item-picture--sm {
+    display: none;
   }
 }
 
@@ -2109,5 +2143,9 @@ ul {
   .service-contant__description {
     font-size: 18px;
     line-height: 21px;
+  }
+  .team-block__description-text {
+    font-size: 18px;
+    line-height: 26px;
   }
 }

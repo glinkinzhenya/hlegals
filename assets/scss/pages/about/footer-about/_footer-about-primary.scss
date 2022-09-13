@@ -29,10 +29,31 @@
     line-height: 17px;
   }
 
+  .primary-about__item-picture--sm {
+
+    @include md {
+      display: none;
+    }
+  }
+
+  .face-indicator--md {
+    
+    @include md-min {
+      display: none;
+    }
+  }
+
   &__item {
     display: flex;
-
+    justify-content: center;
     margin-bottom: 30px;
+
+    @include md-min {
+
+      flex-wrap: wrap;
+    }
+
+
 
     gap: 40px;
 
