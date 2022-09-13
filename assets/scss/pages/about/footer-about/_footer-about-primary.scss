@@ -75,6 +75,10 @@
       height: 60px;
 
       transform: translate(-50%, -50%);
+
+      @include sm {
+        height: 40px;
+      }
     }
   }
 }

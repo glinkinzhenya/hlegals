@@ -2148,4 +2148,7 @@ ul {
     font-size: 18px;
     line-height: 26px;
   }
+  .primary-about__item-image {
+    height: 40px;
+  }
 }
