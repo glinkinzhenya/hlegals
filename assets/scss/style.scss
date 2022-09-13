@@ -18,6 +18,8 @@
 
 @use "pages/about/header-about";
 
-@use "pages/about/main/service";
+@use "pages/about/main-about/service";
 
-@use "pages/about/main/team";
+@use "pages/about/main-about/team";
+
+@use "pages/about/footer-about";

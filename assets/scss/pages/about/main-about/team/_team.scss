@@ -4,12 +4,21 @@
 
 .team-container {
     position: relative;
+max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    
+
 }
+
 .team {
 
+
     &-picture {
+        max-width: 1440px;
 
         &__image {
+            width: 100%;
         }
     }
 
@@ -30,12 +39,17 @@
 }
 
 .team-block {
+max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
     gap: 80px;
     padding-top: 80px;
     padding-bottom: 80px;
+justify-content: center;
 
     &__description {
+    
         display: flex;
         flex-direction: column;
         gap: 40px;
