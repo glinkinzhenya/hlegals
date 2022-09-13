@@ -1459,12 +1459,12 @@ ul {
   margin-left: auto;
 }
 
-.team-picture {
-  max-width: 1440px;
-}
 .team-picture__image {
   width: 100%;
   height: auto;
+}
+.team-picture__image--about {
+  display: none;
 }
 .team-title {
   position: absolute;
@@ -2069,6 +2069,14 @@ ul {
   .service-contant__description {
     font-size: 18px;
     line-height: 21px;
+  }
+  .team-picture__image {
+    display: none;
+  }
+  .team-picture__image--about {
+    display: block;
+
+    width: 100vw;
   }
   .team-block__description-text {
     font-size: 18px;
