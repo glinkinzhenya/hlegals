@@ -1,0 +1,12 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.footer-secondary--about::after {
+    position: absolute;
+        top: 0;
+        right: 0px;
+        left: 0px;
+        height: 4px;
+        content: "";
+        background-color: #e6e6f0;
+}
