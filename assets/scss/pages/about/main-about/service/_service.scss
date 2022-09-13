@@ -13,6 +13,11 @@
   margin-bottom: 100px;
 
   gap: 62px;
+
+  @include xl {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 
@@ -20,9 +25,14 @@
   display: flex;
   flex-direction: column;
 
-  max-width: 633px;
+  @include xl-min {
+    max-width: 633px;
+  }
+
 
   gap: 17px;
+
+
 }
 
 .service-contant__title {
@@ -30,35 +40,54 @@
 
   background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
 
   font-size: 42px;
   line-height: 50px;
 
   -webkit-text-fill-color: transparent;
-          text-fill-color: transparent;
+  text-fill-color: transparent;
+
+  @include sm {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 
 .service-contant__description {
   font-size: 21px;
   line-height: 30px;
+
+  @include sm {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 .service-rating {
   position: relative;
 
+  @include xl {
+    border-top: solid 4px #E6E6F0;
+  }
+
+
   &::after {
-    position: absolute;
-    top: 7px;
-    bottom: 55px;
-    left: -24px;
 
-    width: 4px;
+    @include xl-min {
+      position: absolute;
+      top: 7px;
+      bottom: 55px;
+      left: -24px;
 
-    content: "";
+      width: 4px;
 
-    background-color: #e6e6f0;
+      content: "";
+
+      background-color: #e6e6f0;
+    }
+
   }
 }
 
@@ -68,6 +97,15 @@
   flex-direction: column;
 
   gap: 37px;
+
+  @include xl-sm {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @include xl {
+    padding-top: 15px;
+  }
 }
 
 
@@ -76,12 +114,20 @@
   flex-direction: column;
 
   gap: 8px;
+
+  @include xl-sm {
+    max-width: 314px;
+  }
 }
 
 .rating-item__picture {
   display: flex;
 
   gap: 6px;
+
+  @include md-sm {
+    justify-content: center;
+  }
 }
 
 
@@ -91,13 +137,13 @@
 
   background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
 
   font-size: 36px;
   line-height: 42px;
 
   -webkit-text-fill-color: transparent;
-          text-fill-color: transparent;
+  text-fill-color: transparent;
 }
 
 .rating-item__description {
@@ -105,4 +151,8 @@
 
   font-size: 18px;
   line-height: 21px;
+
+  @include md-sm {
+    text-align: center;
+  }
 }
