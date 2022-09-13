@@ -11,7 +11,8 @@
     justify-content: flex-end;
 
     gap: 15px;
-    @include md {
+     // @include md {
+    @include lg {
       justify-content: flex-start;
     }
     @include sm {

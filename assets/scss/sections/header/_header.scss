@@ -46,7 +46,9 @@
   gap: 11px 20px;
   grid-template-areas: "logo info"
   "logo nav";
-  @include md {
+
+  //@include md
+  @include lg {
     padding-top: 20px;
 
     gap: $gap;
