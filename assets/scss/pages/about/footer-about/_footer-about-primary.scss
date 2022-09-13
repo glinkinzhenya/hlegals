@@ -2,66 +2,72 @@
 @use "../../../mixins" as *;
 
 .footer-about {
-    background-color: #F5F5FA;
-    border-radius: 12px 12px 0px 0px;
+  border-radius: 12px 12px 0 0;
+  background-color: #f5f5fa;
 }
 
 .footer-primary__about {
-    padding-top: 28px;
-    padding-bottom: 28px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .primary-about {
-    margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
+  margin-left: auto;
 
-    &__title {
-        margin-bottom: 30px;
-        font-size: 14px;
-        line-height: 17px;
-        text-align: center;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: #323264;
-        font-weight: 700;
+  &__title {
+    margin-bottom: 30px;
+
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #323264;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+  }
+
+  &__item {
+    display: flex;
+
+    margin-bottom: 30px;
+
+    gap: 40px;
+
+    &-picture {
+      position: relative;
+
+      width: 300px;
+      height: 109px;
+
+      border-radius: 12px;
+      background: #ffffff;
     }
 
-    &__item {
+    &-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
 
-        display: flex;
-        gap: 40px;
-        margin-bottom: 30px;
+      height: 60px;
 
-        &-picture {
-            background: #FFFFFF;
-            border-radius: 12px;
-            width: 300px;
-            height: 109px;
-            position: relative;
-        }
-
-        &-image {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            height: 60px;
-        }
-
+      transform: translate(-50%, -50%);
     }
-
+  }
 }
 
 .face-indicator {
-    width: 16px;
-    height: 16px;
-    margin-bottom: 40px;
+  width: 16px;
+  height: 16px;
+  margin-bottom: 40px;
 
-    opacity: 0.2;
-    border-radius: 8px;
-    background: #24a3ff;
+  opacity: 0.2;
+  border-radius: 8px;
+  background: #24a3ff;
 
-    &.active {
-        opacity: 1;
-    }
+  &.active {
+    opacity: 1;
+  }
 }

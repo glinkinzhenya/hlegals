@@ -16,9 +16,17 @@
 
 
   &__picture {
+
+
     @include lg {
       display: none;
     }
+
+
+  }
+
+  &__image {
+    height: 100%;
   }
 }
 
@@ -37,6 +45,8 @@
   }
 
   &__title {
+
+        padding-top: 3px;
     padding-bottom: 20px;
 
     background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);

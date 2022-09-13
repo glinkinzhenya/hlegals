@@ -6,12 +6,10 @@
 
   overflow: hidden;
 
-  
-
-  background: #ffffff;
-  background: #000000;
   margin-bottom: 40px;
 
+  background: #ffffff;
+  //background: #000000;
 }
 
 
@@ -19,27 +17,24 @@
   position: relative;
   z-index: 1;
 
-
   display: grid;
   justify-content: space-between;
 
   padding-top: 50px;
 
-  gap: 0 $gap;
+  gap: 11px $gap;
   grid-template-areas: "logo info"
-    "logo nav";
-
+  "logo nav";
   @include md {
     padding-top: 20px;
 
     gap: $gap;
     grid-template-areas: "info info"
-      "logo logo"
-      "nav nav";
+    "logo logo"
+    "nav nav";
   }
-
   @include sm {
     grid-template-areas: "info info"
-      "logo nav";
+    "logo nav";
   }
 }

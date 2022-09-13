@@ -286,7 +286,7 @@ ul {
 
   padding-top: 50px;
 
-  gap: 0 20px;
+  gap: 11px 20px;
   grid-template-areas: "logo info" "logo nav";
 }
 
@@ -569,8 +569,8 @@ ul {
 .services {
   position: relative;
 
-  margin-bottom: 100px;
-  padding-bottom: 100px;
+  margin-bottom: 62px;
+  padding-bottom: 79px;
 
   border-radius: 0 0 12px 12px;
   background: -o-linear-gradient(257deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
@@ -640,7 +640,7 @@ ul {
 
   max-width: 413px;
 
-  gap: 20px 20px;
+  gap: 0 20px;
   grid-template-areas: "pic" "tit" "des";
 }
 .services-block__title {
@@ -655,6 +655,7 @@ ul {
 }
 .services-block__picture {
   max-width: 64px;
+  margin-bottom: 5px;
 
   grid-area: pic;
 }
@@ -703,6 +704,9 @@ ul {
 
   gap: 40px;
 }
+.face-box__image {
+  height: 100%;
+}
 
 .face-contant {
   padding-top: 40px;
@@ -714,6 +718,7 @@ ul {
   display: flex;
 }
 .face-contant__title {
+  padding-top: 3px;
   padding-bottom: 20px;
 
   background: -o-linear-gradient(359.87deg, #f0145a 0.84%, #ef8080 99.96%);
@@ -872,7 +877,7 @@ ul {
 }
 
 .brands__title {
-  margin: 20px;
+  margin: 30px;
 
   text-align: center;
   letter-spacing: 1px;
@@ -1142,7 +1147,7 @@ ul {
   color: #323264;
 
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 19px;
 }
 .info-contact__link {
@@ -1196,7 +1201,6 @@ ul {
   margin-bottom: 40px;
 
   background: #ffffff;
-  background: #000000;
 }
 
 .header-menu {
@@ -1210,7 +1214,7 @@ ul {
 
   padding-top: 50px;
 
-  gap: 0 20px;
+  gap: 11px 20px;
   grid-template-areas: "logo info" "logo nav";
 }
 
@@ -1380,6 +1384,10 @@ ul {
           transform: rotate(-135deg);
 }
 
+.main-about {
+  margin-top: 73px;
+}
+
 .service {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1390,7 +1398,7 @@ ul {
 
   margin-bottom: 100px;
 
-  gap: 20px;
+  gap: 62px;
 }
 
 .service-contant {
@@ -1404,7 +1412,7 @@ ul {
 
   max-width: 633px;
 
-  gap: 20px;
+  gap: 17px;
 }
 
 .service-contant__title {
@@ -1433,8 +1441,8 @@ ul {
 .service-rating::after {
   position: absolute;
   top: 7px;
-  bottom: 60px;
-  left: -20px;
+  bottom: 55px;
+  left: -24px;
 
   width: 4px;
 
@@ -1452,7 +1460,7 @@ ul {
   -ms-flex-direction: column;
       flex-direction: column;
 
-  gap: 40px;
+  gap: 37px;
 }
 
 .rating-item__logo {
@@ -1464,7 +1472,7 @@ ul {
   -ms-flex-direction: column;
       flex-direction: column;
 
-  gap: 10px;
+  gap: 8px;
 }
 
 .rating-item__picture {
@@ -1509,7 +1517,8 @@ ul {
   max-width: 1440px;
 }
 .team-picture__image {
-  width: 100%;
+  width: auto;
+  height: 438px;
 }
 .team-title {
   position: absolute;
@@ -1543,9 +1552,9 @@ ul {
   margin-right: auto;
   margin-left: auto;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 92px;
 
-  gap: 80px;
+  gap: 41px;
 }
 .team-block__description {
   display: -webkit-box;
@@ -1558,7 +1567,7 @@ ul {
 
   max-width: 641px;
 
-  gap: 40px;
+  gap: 20px;
 }
 .team-block__description-text {
   color: #000000;

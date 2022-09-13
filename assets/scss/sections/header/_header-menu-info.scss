@@ -8,7 +8,6 @@
 
   gap: $gap;
   grid-area: info;
-  // justify-content: center;
   @include md {
     a {
       color: $color-gray-text;

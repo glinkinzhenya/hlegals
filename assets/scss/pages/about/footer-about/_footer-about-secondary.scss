@@ -2,11 +2,14 @@
 @use "../../../mixins" as *;
 
 .footer-secondary--about::after {
-    position: absolute;
-        top: 0;
-        right: 0px;
-        left: 0px;
-        height: 4px;
-        content: "";
-        background-color: #e6e6f0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height: 4px;
+
+  content: "";
+
+  background-color: #e6e6f0;
 }
