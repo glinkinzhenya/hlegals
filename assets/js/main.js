@@ -6,6 +6,8 @@ $('.navbar-hamburger').click(function () {
 
 });
 
+
+
 // считали DOM элементы
 const headersList = document.querySelectorAll('.slider__header');
 const notesList = document.querySelectorAll('.slider__note');

@@ -2,7 +2,7 @@
 @use "../../../mixins" as *;
 
 .header-about {
-  position: relative;
+  //position: relative;
 
   overflow: hidden;
 
@@ -12,31 +12,31 @@
 }
 
 
-.header-menu {
-  position: relative;
-  z-index: 1;
+// .header-menu {
+//   position: relative;
+//   z-index: 1;
 
-  display: grid;
-  justify-content: space-between;
+//   display: grid;
+//   justify-content: space-between;
 
-  padding-top: 50px;
+//   padding-top: 50px;
 
-  gap: 11px $gap;
-  grid-template-areas: "logo info"
-  "logo nav";
-  @include md {
-    padding-top: 20px;
+//   gap: 11px $gap;
+//   grid-template-areas: "logo info"
+//   "logo nav";
+//   @include md {
+//     padding-top: 20px;
 
-    gap: $gap;
-    grid-template-areas: "info info"
-    "logo logo"
-    "nav nav";
-  }
-  @include sm {
-    grid-template-areas: "info info"
-    "logo nav";
-  }
-}
+//     gap: $gap;
+//     grid-template-areas: "info info"
+//     "logo logo"
+//     "nav nav";
+//   }
+//   @include sm {
+//     grid-template-areas: "info info"
+//     "logo nav";
+//   }
+// }
 
 // aaaaaaaa
 
@@ -117,6 +117,7 @@
 
 .navbar-hamburger span {
   position: absolute;
+
   left: 0;
 
   display: block;
@@ -129,7 +130,7 @@
 
   opacity: 1;
   border-radius: 3px;
-  background: $color-white;
+  background: #323264;
 }
 
 .navbar-hamburger span:nth-child(1) {
@@ -167,4 +168,8 @@
   @include xl {
     gap: 15px;
   }
+}
+
+.navbar__list--about{
+  position: fixed !important;
 }

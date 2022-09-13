@@ -99,6 +99,11 @@
   }
 }
 
+.cases-section:not(:first-child) {
+
+  cursor: pointer;
+
+}
 
 .cases-section {
   display: flex;
@@ -106,7 +111,6 @@
 
   padding: 20px;
 
-  cursor: pointer;
 
   background-color: #f5f5fa;
 
@@ -114,7 +118,7 @@
     justify-content: flex-end;
   }
 
-  &:hover {
+  &:hover:not(:first-child) {
     background-color: #9292a364;
   }
 
