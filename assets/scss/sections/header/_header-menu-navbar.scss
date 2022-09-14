@@ -11,7 +11,7 @@
     justify-content: flex-end;
 
     gap: 15px;
-    // @include md {
+    
     @include lg {
       justify-content: flex-start;
     }
@@ -29,8 +29,6 @@
       text-align: center;
 
       border-radius: 0 0 12px 12px;
-      // background: linear-gradient(180deg, rgba(50, 50, 100, 0) 40%, #323264 100%);
-      // box-shadow: 0 15px 10px #323264;
       background: #ffffff;
       box-shadow: 0 0 150px #24a3ff;
     }
@@ -47,8 +45,6 @@
       background: #ededf7;
     }
   }
-
-
 
   &__link {
     padding: 0.5em 0;
@@ -102,8 +98,6 @@
 .navbar-hamburger.open span {
   background: $color-accent;
 }
-
-
 
 .navbar-hamburger span {
   position: absolute;
