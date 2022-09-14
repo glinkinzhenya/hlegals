@@ -2,7 +2,6 @@
 @use "../../../mixins" as *;
 
 .brands {
-  
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
@@ -15,7 +14,7 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  color: #323264;
+  color: $color-primary;
 
   font-size: 14px;
   line-height: 17px;
@@ -26,6 +25,7 @@
     display: grid;
 
     grid-template-columns: repeat(4, 1fr);
+
     @include lg {
       grid-template-columns: repeat(2, 1fr);
     }

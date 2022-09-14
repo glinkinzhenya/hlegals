@@ -22,7 +22,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 
-    color: #323264;
+    color: $color-primary;
 
     font-size: 14px;
     font-weight: 700;
@@ -30,14 +30,12 @@
   }
 
   .primary-about__item-picture--sm {
-
     @include md {
       display: none;
     }
   }
 
   .face-indicator--md {
-    
     @include md-min {
       display: none;
     }
@@ -46,16 +44,14 @@
   &__item {
     display: flex;
     justify-content: center;
+
     margin-bottom: 30px;
 
-    @include md-min {
+    gap: 40px;
 
+    @include md-min {
       flex-wrap: wrap;
     }
-
-
-
-    gap: 40px;
 
     &-picture {
       position: relative;
@@ -64,7 +60,7 @@
       height: 109px;
 
       border-radius: 12px;
-      background: #ffffff;
+      background: $color-white;
 
       @include sm {
         height: 57px;
@@ -94,7 +90,7 @@
 
   opacity: 0.2;
   border-radius: 8px;
-  background: #24a3ff;
+  background: $color-active;
 
   &.active {
     opacity: 1;

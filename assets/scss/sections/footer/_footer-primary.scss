@@ -11,10 +11,8 @@
 
   padding-top: 40px;
 
-
-
   @include sm {
-        margin-bottom: 150px;
+    margin-bottom: 150px;
   }
 }
 
@@ -26,61 +24,61 @@
   @include xl {
     grid-template-rows: 41% 11% 3%;
   }
+
   @include lg-min {
     gap: 40px;
     grid-template-areas: "a1 a2 a3"
-    "a4 a2 a3"
-    "a4 a5 a3"
-    "a4 a5 a6";
+      "a4 a2 a3"
+      "a4 a5 a3"
+      "a4 a5 a6";
     grid-template-rows: 37% 17% 3%;
   }
+
   @include lg {
     gap: 20px;
     grid-template-areas: "a1 a2"
-    "a3 a2"
-    "a3 a4"
-    "a5 a4"
-    "a5 a6";
+      "a3 a2"
+      "a3 a4"
+      "a5 a4"
+      "a5 a6";
     grid-template-rows: 20% 11% 21% 8% 35%;
   }
+
   @include md {
     gap: 20px;
     grid-template-areas: "a1"
-    "a2"
-    "a3"
-    "a4"
-    "a5"
-    "a6";
+      "a2"
+      "a3"
+      "a4"
+      "a5"
+      "a6";
     grid-template-rows: 5% 20% 20% 20% 20% 5% 1%;
   }
+
   @include sm {
     gap: 20px;
     grid-template-areas: "a1"
-    "a2"
-    "a3"
-    "a4"
-    "a5"
-    "a6";
+      "a2"
+      "a3"
+      "a4"
+      "a5"
+      "a6";
     grid-template-rows: 16% 38% 1% 41%;
   }
 }
 
 .footer-primary__box::after {
+  @include sm-min {
+    position: absolute;
+    top: 70%;
+    right: -5px;
+    bottom: 0;
+    left: 0;
 
-@include sm-min {
-  position: absolute;
-  top: 70%;
-  right: -5px;
-  bottom: 0;
-  left: 0;
+    content: "";
 
-  content: "";
-
-  background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #f5f5fa 86.5%);
-}
-
-
-  
+    background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #f5f5fa 86.5%);
+  }
 }
 
 
@@ -91,7 +89,7 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  color: #24a3ff;
+  color: $color-active;
 
   font-size: 14px;
   font-weight: 700;
@@ -101,22 +99,23 @@
 .footer-primary__title {
   margin-bottom: 40px;
 
-  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  background: linear-gradient(90.13deg, $color-red 0.84%, #ef8080 99.96%);
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
 
   font-size: 42px;
   font-weight: 700;
   line-height: 50px;
 
-  -webkit-text-fill-color: transparent;
-          text-fill-color: transparent;
+  @include sm {
+    margin-bottom: 20px;
 
-          @include sm {
-            margin-bottom: 20px;
-            font-size: 32px;
-              line-height: 38px;
-          }
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
 }
 
 .footer-primary__button {
@@ -131,11 +130,11 @@
   transform: translateX(-50%);
 
   border-radius: 12px;
-  background: #24a3ff;
+  background: $color-active;
   box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
 
   @include sm {
-        bottom: -110px;
+    bottom: -110px;
   }
 
 
@@ -146,7 +145,7 @@
 
     text-align: center;
 
-    color: #ffffff;
+    color: $color-white;
 
     font-size: 14px;
     font-weight: 700;

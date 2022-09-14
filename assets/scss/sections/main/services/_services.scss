@@ -8,12 +8,11 @@
   padding-bottom: 79px;
 
   border-radius: 0 0 12px 12px;
-  background: linear-gradient(193deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+  background: linear-gradient(193deg, $color-primary 11.93%, $color-primary 57.17%, #643e72 87.46%);
 
-@include sm {
+  @include sm {
     padding-bottom: 20px;
-
-}
+  }
 
   &::before {
     position: absolute;
@@ -50,7 +49,7 @@
     text-transform: uppercase;
 
     opacity: 0.5;
-    color: #ffffff;
+    color: $color-white;
 
     font-size: 14px;
     line-height: 17px;
@@ -60,36 +59,38 @@
     margin-top: 3px;
     margin-bottom: 68px;
 
-    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    background: linear-gradient(90.13deg, $color-red 0.84%, #ef8080 99.96%);
     -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
 
     font-size: 42px;
     line-height: 50px;
 
+    @include sm {
+      margin-bottom: 23px;
+
+      font-size: 32px;
+      line-height: 38px;
+    }
+
     -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
-
-
-            @include sm {
-                  margin-bottom: 23px;
-font-size: 32px;
-  line-height: 38px;
-
-            }
+    text-fill-color: transparent;
   }
 
   &-grid {
     display: grid;
 
     gap: 40px;
+
     @include lg-min {
       grid-template-columns: repeat(3, 1fr);
     }
+
     @include lg-sm {
       grid-template-columns: repeat(2, 1fr);
       justify-items: center;
     }
+
     @include sm {
       grid-template-columns: repeat(1, 1fr);
     }
