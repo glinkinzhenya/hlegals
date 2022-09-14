@@ -19,9 +19,6 @@
     flex-direction: column;
   }
 
-
-
-
   &__info {
     display: flex;
     flex-direction: column;
@@ -53,7 +50,6 @@
     flex-direction: column;
   }
 
-
   &__address {
     &-link {
       color: $color-primary;
@@ -63,11 +59,6 @@
       line-height: 19px;
     }
   }
-
-
-
-
-
 
   &__link {
     letter-spacing: 1px;
@@ -92,14 +83,6 @@
     flex-direction: column;
   }
 
-
-
-
-
-
-
-
-
   &__number-tel {
     color: #46466e;
 
@@ -107,8 +90,6 @@
     font-weight: 700;
     line-height: 19px;
   }
-
-
 
   &__mail-link {
     color: $color-active;
