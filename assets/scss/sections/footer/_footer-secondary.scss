@@ -53,12 +53,20 @@
 
 
   &__address {
-    color: #323264;
+   
+
+
+    &-link {
+       color: #323264;
 
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
+    }
   }
+
+
+
 
 
 

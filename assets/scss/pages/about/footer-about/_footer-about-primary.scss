@@ -65,6 +65,10 @@
 
       border-radius: 12px;
       background: #ffffff;
+
+      @include sm {
+        height: 57px;
+      }
     }
 
     &-image {
@@ -77,7 +81,7 @@
       transform: translate(-50%, -50%);
 
       @include sm {
-        height: 40px;
+        height: 31px;
       }
     }
   }

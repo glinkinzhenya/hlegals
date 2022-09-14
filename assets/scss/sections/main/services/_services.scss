@@ -10,6 +10,11 @@
   border-radius: 0 0 12px 12px;
   background: linear-gradient(193deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
 
+@include sm {
+    padding-bottom: 20px;
+
+}
+
   &::before {
     position: absolute;
     top: 100%;
@@ -64,6 +69,14 @@
 
     -webkit-text-fill-color: transparent;
             text-fill-color: transparent;
+
+
+            @include sm {
+                  margin-bottom: 23px;
+font-size: 32px;
+  line-height: 38px;
+
+            }
   }
 
   &-grid {

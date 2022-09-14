@@ -5,6 +5,11 @@
 .main-about {
   margin-top: 73px;
   position: relative;
+
+@include sm {
+    margin-top: 40px;
+}
+
 }
 
 .service {
@@ -18,6 +23,10 @@
   @include xl {
     flex-direction: column;
     gap: 20px;
+  }
+
+  @include sm {
+    margin-bottom: 45px;
   }
 }
 
@@ -142,9 +151,11 @@
 
   font-size: 36px;
   line-height: 42px;
-
+font-weight: 700;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
+
+
 }
 
 .rating-item__description {

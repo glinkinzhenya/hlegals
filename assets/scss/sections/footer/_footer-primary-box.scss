@@ -54,6 +54,10 @@
   margin-bottom: 10px;
   padding: 20px;
   padding-bottom: 0;
+
+  @include sm {
+    margin-bottom: 0;
+  }
 }
 
 .box-section__link {
@@ -96,7 +100,7 @@
 }
 
 .box-section__description::after {
-  position: absolute;
+   position: absolute;
   top: 0;
   right: 20px;
   left: 20px;
@@ -106,6 +110,8 @@
   content: "";
 
   background-color: #e6e6f0;
+ 
+
 }
 
 

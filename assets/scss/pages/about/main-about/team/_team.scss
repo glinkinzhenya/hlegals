@@ -78,6 +78,11 @@
     flex-direction: column;
   }
 
+  @include sm {
+    padding-top: 25px;
+        padding-bottom: 50px;
+  }
+
 
   &__description {
     display: flex;
