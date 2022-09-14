@@ -11,22 +11,48 @@
     justify-content: flex-end;
 
     gap: 15px;
-     // @include md {
+
+    // @include md {
     @include lg {
       justify-content: flex-start;
     }
+
     @include sm {
       position: absolute;
       right: 0;
       left: 0;
+      top: 0;
+      height: 70vh;
+      padding-top: 62px;
 
       display: none;
 
       text-align: center;
+  box-shadow: 0 0 150px #24a3ff;
 
-      background: linear-gradient(180deg, rgba(50, 50, 100, 0) 40%, #323264 100%);
-      box-shadow: 0 15px 10px #323264;
+
+
+      // background: linear-gradient(180deg, rgba(50, 50, 100, 0) 40%, #323264 100%);
+      // box-shadow: 0 15px 10px #323264;
+
+    background: #FFFFFF;
+      border-radius: 0px 0px 12px 12px;
     }
+  }
+
+  &__item {
+    
+
+
+          @include sm {
+
+            background: #EDEDF7;
+    border-radius: 12px;
+      margin-bottom: 11px;
+        padding: 15px;
+        margin-left: 20px;
+          margin-right: 20px;
+          }
   }
 
 
@@ -43,12 +69,22 @@
     &:hover {
       color: $color-accent;
     }
+
+
+    @include sm {
+    font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+  
+
+      color: #24A3FF;
+    }
   }
 }
 
 .navbar-hamburger {
   position: relative;
-
+  z-index: 5;
   display: none;
 
   width: 30px;
@@ -64,6 +100,18 @@
   }
 
 }
+
+.navbar-hamburger.open {
+    position: absolute;
+      top: 20px;
+      right: 20px;
+      
+}
+
+.navbar-hamburger.open span{
+  background: $color-accent;
+}
+
 
 
 .navbar-hamburger span {
