@@ -9,10 +9,11 @@
 
 .logo {
   &__image {
-   // width: 155px;
-height: 62px;
+    // width: 155px;
+    height: 62px;
+
     @include sm {
-    height: 31px;
+      height: 31px;
     }
   }
 }

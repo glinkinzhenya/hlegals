@@ -9,15 +9,14 @@
 
   gap: 0 20px;
   grid-template-areas: "pic"
-    "tit"
-    "des";
-
+  "tit"
+  "des";
   @include sm {
     align-items: center;
 
     gap: 0 10px;
     grid-template-areas: "pic tit"
-      "des des";
+    "des des";
     grid-template-columns: auto 1fr;
   }
 
@@ -30,11 +29,9 @@
     line-height: 28px;
 
     grid-area: tit;
-
     @include sm {
       font-size: 18px;
       line-height: 21px;
-
     }
   }
 
@@ -42,6 +39,7 @@
     // margin-bottom: 20px;
     max-width: 64px;
     margin-bottom: 5px;
+
     grid-area: pic;
   }
 
@@ -58,7 +56,6 @@
     line-height: 26px;
 
     grid-area: des;
-
     @include sm {
       font-size: 16px;
     }

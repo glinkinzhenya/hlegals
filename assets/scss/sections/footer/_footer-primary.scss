@@ -11,10 +11,8 @@
 
   padding-top: 40px;
 
-
-
   @include sm {
-        margin-bottom: 150px;
+    margin-bottom: 150px;
   }
 }
 
@@ -66,21 +64,17 @@
 }
 
 .footer-primary__box::after {
+  @include sm-min {
+    position: absolute;
+    top: 70%;
+    right: -5px;
+    bottom: 0;
+    left: 0;
 
-@include sm-min {
-  position: absolute;
-  top: 70%;
-  right: -5px;
-  bottom: 0;
-  left: 0;
+    content: "";
 
-  content: "";
-
-  background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #f5f5fa 86.5%);
-}
-
-
-  
+    background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #f5f5fa 86.5%);
+  }
 }
 
 
@@ -109,14 +103,14 @@
   font-weight: 700;
   line-height: 50px;
 
+  @include sm {
+    margin-bottom: 20px;
+
+    font-size: 32px;
+    line-height: 38px;
+  }
   -webkit-text-fill-color: transparent;
           text-fill-color: transparent;
-
-          @include sm {
-            margin-bottom: 20px;
-            font-size: 32px;
-              line-height: 38px;
-          }
 }
 
 .footer-primary__button {
@@ -135,7 +129,7 @@
   box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
 
   @include sm {
-        bottom: -110px;
+    bottom: -110px;
   }
 
 
