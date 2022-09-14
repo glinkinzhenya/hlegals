@@ -2,14 +2,14 @@
 @use "../../../mixins" as *;
 
 .header-about {
-  //position: relative;
-  //z-index: 10;
+  
 
   overflow: hidden;
 
   margin-bottom: 40px;
 
   background: #ffffff;
+  //background: green;
 }
 
 
@@ -125,8 +125,17 @@
 }
 
 .navbar__list--about{
-top: 0;
-height: 30vh;
-position: absolute;
-//z-index: 10;
+  @include sm {
+    position: fixed;
+  }
+
+}
+
+.navbar-hamburger--about span{
+background: $color-primary;
+}
+
+.navbar-hamburger--about.open {
+ //height: 100vh;
+
 }

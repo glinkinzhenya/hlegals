@@ -1285,11 +1285,8 @@ ul {
           transform: rotate(0deg);
 }
 
-.navbar__list--about {
-  position: absolute;
-  top: 0;
-
-  height: 30vh;
+.navbar-hamburger--about span {
+  background: #323264;
 }
 
 .main-about {
@@ -2022,6 +2019,9 @@ ul {
   }
   .navbar-hamburger {
     display: block;
+  }
+  .navbar__list--about {
+    position: fixed;
   }
   .service-contant__title {
     font-size: 32px;
