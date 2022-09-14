@@ -532,7 +532,7 @@ ul {
 .slider__header {
   position: relative;
 
-  color: #b2b2b9;
+  color: #b3b3ba;
 }
 .slider__notes {
   display: -webkit-box;
@@ -564,7 +564,7 @@ ul {
 
   opacity: 0.2;
   border-radius: 8px;
-  background: #24a2fe;
+  background: #24a3ff;
 }
 .slider__indicator.active {
   opacity: 1;
@@ -657,7 +657,7 @@ ul {
 .services-block__title {
   margin-bottom: 15px;
 
-  color: #24a2fe;
+  color: #24a3ff;
 
   font-size: 24px;
   line-height: 28px;
@@ -697,7 +697,7 @@ ul {
 
   opacity: 0.2;
   border-radius: 8px;
-  background: #24a2fe;
+  background: #24a3ff;
 }
 .face-indicator.active {
   opacity: 1;
@@ -747,14 +747,14 @@ ul {
 .face-contant__name {
   padding-bottom: 5px;
 
-  color: #b2b2b9;
+  color: #b3b3ba;
 
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
 }
 .face-contant__about {
-  color: #b2b2b9;
+  color: #b3b3ba;
 
   font-size: 16px;
   font-weight: 400;
@@ -765,7 +765,7 @@ ul {
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  color: #24a2fe;
+  color: #24a3ff;
 
   font-size: 14px;
   font-weight: 700;
@@ -877,7 +877,7 @@ ul {
   line-height: 28px;
 }
 .cases-section__notes {
-  color: #b2b2b9;
+  color: #b3b3ba;
 
   font-size: 18px;
   line-height: 26px;
@@ -960,7 +960,7 @@ ul {
 }
 
 .box-section__link {
-  color: #24a2fe;
+  color: #24a3ff;
 
   font-size: 18px;
   font-weight: 400;
@@ -973,7 +973,7 @@ ul {
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  color: #b2b2b9;
+  color: #b3b3ba;
 
   font-size: 12px;
   font-weight: 700;
@@ -1003,7 +1003,7 @@ ul {
 
   content: "";
 
-  background-color: #e5e5ef;
+  background-color: #e6e6f0;
 }
 
 .box-section__picture {
@@ -1038,7 +1038,7 @@ ul {
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  color: #24a2fe;
+  color: #24a3ff;
 
   font-size: 14px;
   font-weight: 700;
@@ -1075,7 +1075,7 @@ ul {
           transform: translateX(-50%);
 
   border-radius: 12px;
-  background: #24a2fe;
+  background: #24a3ff;
   -webkit-box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
           box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
 }
@@ -1132,7 +1132,7 @@ ul {
 
   content: "";
 
-  background-color: #e5e5ef;
+  background-color: #e6e6f0;
 }
 
 .info-contact {
@@ -1153,7 +1153,7 @@ ul {
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  color: #24a2fe;
+  color: #24a3ff;
 
   font-size: 12px;
   font-weight: 700;
@@ -1178,7 +1178,7 @@ ul {
   line-height: 19px;
 }
 .info-social__mail-link {
-  color: #24a2fe;
+  color: #24a3ff;
 
   font-size: 16px;
   font-weight: 700;
@@ -1186,7 +1186,7 @@ ul {
 }
 
 .footer-secondary__copyright {
-  color: #b2b2b9;
+  color: #b3b3ba;
 
   font-size: 16px;
   line-height: 19px;
@@ -1203,7 +1203,7 @@ ul {
 .info__language-link--about {
   padding: 6px 8px;
 
-  color: #b2b2b9;
+  color: #b3b3ba;
   border-radius: 10px;
 
   font-size: 12px;
@@ -1219,7 +1219,7 @@ ul {
 }
 
 .info__address-link--about {
-  color: #b2b2b9;
+  color: #b3b3ba;
 
   font-size: 16px;
   font-weight: 400;
@@ -1227,7 +1227,7 @@ ul {
 }
 
 .info__phone-link--about {
-  color: #b2b2b9;
+  color: #b3b3ba;
 
   font-size: 16px;
   font-weight: 700;
@@ -1237,7 +1237,7 @@ ul {
 .navbar__link--about {
   padding: 0.5em 0;
 
-  color: #24a2fe;
+  color: #24a3ff;
 
   font-size: 18px;
   font-weight: 400;
@@ -1534,7 +1534,7 @@ ul {
 
   opacity: 0.2;
   border-radius: 8px;
-  background: #24a2fe;
+  background: #24a3ff;
 }
 .face-indicator.active {
   opacity: 1;
@@ -1550,7 +1550,7 @@ ul {
 
   content: "";
 
-  background-color: #e5e5ef;
+  background-color: #e6e6f0;
 }
 
 @media (min-width: 576px) {
@@ -1682,7 +1682,7 @@ ul {
 
     content: "";
 
-    background-color: #e5e5ef;
+    background-color: #e6e6f0;
   }
 }
 
@@ -1702,7 +1702,7 @@ ul {
     gap: 20px;
   }
   .service-rating {
-    border-top: solid 4px #e5e5ef;
+    border-top: solid 4px #e6e6f0;
   }
   .rating-item {
     padding-top: 15px;
@@ -1933,8 +1933,8 @@ ul {
 
     border-radius: 0 0 12px 12px;
     background: #ffffff;
-    -webkit-box-shadow: 0 0 150px #24a2fe;
-            box-shadow: 0 0 150px #24a2fe;
+    -webkit-box-shadow: 0 0 150px #24a3ff;
+            box-shadow: 0 0 150px #24a3ff;
   }
   .navbar__item {
     margin-right: 20px;
@@ -1948,7 +1948,7 @@ ul {
   .navbar__link {
     text-align: center;
 
-    color: #24a2fe;
+    color: #24a3ff;
 
     font-size: 24px;
     line-height: 28px;

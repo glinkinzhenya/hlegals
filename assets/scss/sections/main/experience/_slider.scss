@@ -8,7 +8,6 @@ $size: 16px;
   @include lg-min {
     gap: 80px;
   }
-
   @include lg {
     flex-direction: column;
   }
@@ -22,7 +21,6 @@ $size: 16px;
     flex-grow: 2;
 
     gap: 20px;
-
     @include lg-min {
       &::after {
         position: absolute;
@@ -41,7 +39,7 @@ $size: 16px;
   &__header {
     position: relative;
 
-    color: $color-gray-text;
+    color: #b3b3ba;
 
     @include lg-min {
       text-align: right;
@@ -49,7 +47,6 @@ $size: 16px;
       font-size: 42px;
       line-height: 50px;
     }
-
     @include lg {
       display: none;
 
@@ -62,31 +59,29 @@ $size: 16px;
       line-height: 17px;
 
       span {
-        background: linear-gradient(90.13deg, #ef8080 0.84%, $color-red 99.96%);
+        background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
         -webkit-background-clip: text;
-        background-clip: text;
+                background-clip: text;
 
         -webkit-text-fill-color: transparent;
-        text-fill-color: transparent;
+                text-fill-color: transparent;
       }
     }
 
     &.active {
       @include lg-min {
         span {
-          background: linear-gradient(90.13deg, #ef8080 0.84%, $color-red 99.96%);
+          background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
           -webkit-background-clip: text;
-          background-clip: text;
+                  background-clip: text;
 
           -webkit-text-fill-color: transparent;
-          text-fill-color: transparent;
+                  text-fill-color: transparent;
         }
       }
-
       @include lg {
         display: block;
       }
-
       @include lg-min {
         &::after {
           position: absolute;
@@ -115,7 +110,7 @@ $size: 16px;
   &__note {
     display: none;
 
-    color: $color-white;
+    color: #ffffff;
 
     @include lg-min {
       max-width: 600px;
@@ -133,7 +128,6 @@ $size: 16px;
       font-size: 32px;
       line-height: 38px;
     }
-
     @include lg {
       margin-bottom: 15px;
 
@@ -147,7 +141,6 @@ $size: 16px;
       font-size: 21px;
       line-height: 30px;
     }
-
     @include lg {
       margin-bottom: $gap;
 
@@ -160,7 +153,6 @@ $size: 16px;
     @include lg-min {
       display: none;
     }
-
     @include lg {
       display: flex;
       justify-content: center;
@@ -175,7 +167,7 @@ $size: 16px;
 
     opacity: 0.2;
     border-radius: 8px;
-    background: $color-active;
+    background: #24a3ff;
 
     &.active {
       opacity: 1;

@@ -1,6 +1,7 @@
 @use "../../../../presets" as *;
 @use "../../../../mixins" as *;
 
+
 .team-container {
   position: relative;
 
@@ -11,9 +12,12 @@
 
 .team {
   &-picture {
+
+
     &__image {
       width: 100%;
       height: auto;
+      // max-width: 1440px;
 
       @include sm {
         display: none;
@@ -21,14 +25,16 @@
     }
 
     &__image--about {
+
       display: none;
 
       @include sm {
         display: block;
-
         width: 100vw;
       }
+
     }
+
   }
 
   &-title {
@@ -42,17 +48,16 @@
     text-transform: uppercase;
 
     opacity: 0.8;
-    color: $color-white;
+    color: #ffffff;
     text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
 
     font-size: 96px;
     line-height: 113px;
 
     @include xl {
-      letter-spacing: 20px;
-
       font-size: 36px;
       line-height: 42px;
+      letter-spacing: 20px;
     }
   }
 }
@@ -75,25 +80,29 @@
 
   @include sm {
     padding-top: 25px;
-    padding-bottom: 50px;
+        padding-bottom: 50px;
   }
+
 
   &__description {
     display: flex;
     flex-direction: column;
 
-    gap: 20px;
 
     @include lg-min {
       max-width: 641px;
     }
+
+
+    gap: 20px;
   }
 
   &__description-text {
-    color: $color-black;
+    color: #000000;
 
     font-size: 21px;
     line-height: 30px;
+    //font-weight: 500;
 
     @include sm {
       font-size: 18px;
@@ -102,7 +111,9 @@
   }
 
   &__title {
-    background: linear-gradient(90.13deg, $color-red 0.84%, #ef8080 99.96%);
+
+
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
     -webkit-background-clip: text;
     background-clip: text;
 
@@ -110,16 +121,17 @@
     font-weight: 700;
     line-height: 50px;
 
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+
     @include lg-min {
       max-width: 414px;
     }
+
 
     @include md {
       font-size: 32px;
       line-height: 38px;
     }
-
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
   }
 }

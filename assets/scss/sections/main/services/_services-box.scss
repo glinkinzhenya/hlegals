@@ -24,7 +24,7 @@
   &__title {
     margin-bottom: 15px;
 
-    color: $color-active;
+    color: #24a3ff;
 
     font-size: 24px;
     line-height: 28px;
@@ -34,6 +34,7 @@
     @include sm {
       font-size: 18px;
       line-height: 21px;
+
     }
   }
 
@@ -41,7 +42,6 @@
     // margin-bottom: 20px;
     max-width: 64px;
     margin-bottom: 5px;
-
     grid-area: pic;
   }
 
@@ -52,7 +52,7 @@
   }
 
   &__description {
-    color: $color-white;
+    color: #ffffff;
 
     font-size: 18px;
     line-height: 26px;

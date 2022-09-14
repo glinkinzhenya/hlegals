@@ -16,9 +16,13 @@
 
 
   &__picture {
+
+
     @include lg {
       display: none;
     }
+
+
   }
 
   &__image {
@@ -41,12 +45,13 @@
   }
 
   &__title {
-    padding-top: 3px;
+
+        padding-top: 3px;
     padding-bottom: 20px;
 
-    background: linear-gradient(90.13deg, $color-red 0.84%, #ef8080 99.96%);
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
     -webkit-background-clip: text;
-    background-clip: text;
+            background-clip: text;
 
     font-size: 42px;
     font-weight: 700;
@@ -56,15 +61,14 @@
       font-size: 32px;
       line-height: 38px;
     }
-
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
+            text-fill-color: transparent;
   }
 
   &__name {
     padding-bottom: 5px;
 
-    color: $color-gray-text;
+    color: #b3b3ba;
 
     font-size: 18px;
     font-weight: 400;
@@ -74,7 +78,7 @@
   &__about {
     /* identical to box height, or 138% */
     /* Grey / Text */
-    color: $color-gray-text;
+    color: #b3b3ba;
 
     font-size: 16px;
     font-weight: 400;
@@ -90,7 +94,7 @@
   text-transform: uppercase;
   /* Active / Regular */
 
-  color: $color-active;
+  color: #24a3ff;
 
   font-size: 14px;
   font-weight: 700;

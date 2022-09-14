@@ -2,17 +2,49 @@
 @use "../../../mixins" as *;
 
 .header-about {
+  
+
   overflow: hidden;
 
   margin-bottom: 40px;
 
-  background: $color-white;
+  background: #ffffff;
+  //background: green;
 }
+
+
+// .header-menu {
+//   position: relative;
+//   z-index: 1;
+
+//   display: grid;
+//   justify-content: space-between;
+
+//   padding-top: 50px;
+
+//   gap: 11px $gap;
+//   grid-template-areas: "logo info"
+//   "logo nav";
+//   @include md {
+//     padding-top: 20px;
+
+//     gap: $gap;
+//     grid-template-areas: "info info"
+//     "logo logo"
+//     "nav nav";
+//   }
+//   @include sm {
+//     grid-template-areas: "info info"
+//     "logo nav";
+//   }
+// }
+
+// aaaaaaaa
 
 .info__language-link--about {
   padding: 6px 8px;
 
-  color: $color-gray-text;
+  color: #b3b3ba;
   border-radius: 10px;
 
   font-size: 12px;
@@ -30,7 +62,7 @@
 }
 
 .info__address-link--about {
-  color: $color-gray-text;
+  color: #b3b3ba;
 
   font-size: 16px;
   font-weight: 400;
@@ -38,7 +70,7 @@
 }
 
 .info__phone-link--about {
-  color: $color-gray-text;
+  color: #b3b3ba;
 
   font-size: 16px;
   font-weight: 700;
@@ -48,7 +80,7 @@
 .navbar__link--about {
   padding: 0.5em 0;
 
-  color: $color-active;
+  color: #24a3ff;
 
   font-size: 18px;
   font-weight: 400;
@@ -59,10 +91,11 @@
   }
 }
 
+
 .active--about {
   text-decoration: underline;
 
-  color: $color-red;
+  color: #f0145a;
 }
 
 .navbar-hamburger {
@@ -83,18 +116,26 @@
   }
 }
 
+
+
 .header-menu__info--about {
   @include xl {
     gap: 15px;
   }
 }
 
-.navbar__list--about {
+.navbar__list--about{
   @include sm {
     position: fixed;
   }
+
 }
 
-.navbar-hamburger--about span {
-  background: $color-primary;
+.navbar-hamburger--about span{
+background: $color-primary;
+}
+
+.navbar-hamburger--about.open {
+ //height: 100vh;
+
 }

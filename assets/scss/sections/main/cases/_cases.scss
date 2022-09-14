@@ -6,28 +6,26 @@
 
   @include lg-min {
     grid-template-areas: "a1 a1 a3 a3 a4"
-      "a2 a2 a3 a3 a4"
-      "a5 a6 a6 a7 a7";
+    "a2 a2 a3 a3 a4"
+    "a5 a6 a6 a7 a7";
     grid-template-columns: 24% 9% 1fr 8.5% 33%;
     grid-template-rows: 12% 1fr 1fr;
   }
-
   @include lg {
     grid-template-areas: "a1 a1 "
-      "a2 a3"
-      "a4 a5"
-      "a6 a7";
+    "a2 a3"
+    "a4 a5"
+    "a6 a7";
     grid-template-columns: repeat(2, 1fr);
   }
-
   @include md {
     grid-template-areas: "a1"
-      "a2"
-      "a3"
-      "a4"
-      "a5"
-      "a6"
-      "a7";
+    "a2"
+    "a3"
+    "a4"
+    "a5"
+    "a6"
+    "a7";
     grid-template-columns: 1fr;
   }
 }
@@ -35,80 +33,76 @@
 
 
 
-.cases>div:nth-of-type(1) {
+.cases > div:nth-of-type(1) {
   justify-content: center;
 
-  border: 1px solid $color-white;
+  border: 1px solid #ffffff;
   border-radius: 12px 0 0 0;
 
   grid-area: a1;
-
   @include lg {
     border-radius: 12px 12px 0 0;
   }
 }
 
-.cases>div:nth-of-type(2) {
-  border: 1px solid $color-white;
+.cases > div:nth-of-type(2) {
+  border: 1px solid #ffffff;
 
   grid-area: a2;
 }
 
-.cases>div:nth-of-type(3) {
-  border: 1px solid $color-white;
+.cases > div:nth-of-type(3) {
+  border: 1px solid #ffffff;
 
   grid-area: a3;
 }
 
-.cases>div:nth-of-type(4) {
-  border: 1px solid $color-white;
+.cases > div:nth-of-type(4) {
+  border: 1px solid #ffffff;
   border-radius: 0 12px 0 0;
 
   grid-area: a4;
-
   @include lg {
     border-radius: 0;
   }
 }
 
-.cases>div:nth-of-type(5) {
-  border: 1px solid $color-white;
+.cases > div:nth-of-type(5) {
+  border: 1px solid #ffffff;
   border-radius: 0 0 0 12px;
 
   grid-area: a5;
-
   @include lg {
     border-radius: 0;
   }
 }
 
-.cases>div:nth-of-type(6) {
-  border: 1px solid $color-white;
+.cases > div:nth-of-type(6) {
+  border: 1px solid #ffffff;
 
   grid-area: a6;
-
   @include lg {
     border-radius: 0 0 0 12px;
   }
-
   @include md {
     border-radius: 0 0 0 0;
   }
 }
 
-.cases>div:nth-of-type(7) {
-  border: 1px solid $color-white;
+.cases > div:nth-of-type(7) {
+  border: 1px solid #ffffff;
   border-radius: 0 0 12px 0;
 
   grid-area: a7;
-
   @include md {
     border-radius: 0 0 12px 12px;
   }
 }
 
 .cases-section:not(:first-child) {
+
   cursor: pointer;
+
 }
 
 .cases-section {
@@ -116,6 +110,7 @@
   flex-direction: column;
 
   padding: 20px;
+
 
   background-color: #f5f5fa;
 
@@ -131,7 +126,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 
-    color: $color-red;
+    color: #f0145a;
 
     font-size: 14px;
     line-height: 17px;
@@ -150,7 +145,7 @@
   }
 
   &__notes {
-    color: $color-gray-text;
+    color: #b3b3ba;
 
     font-size: 18px;
     line-height: 26px;

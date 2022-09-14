@@ -28,14 +28,14 @@
   &::after {
     content: "";
 
-    background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, $color-primary 100%);
+    background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
 
     @include abs-position(70%);
   }
 }
 
 .header-menu {
-  position: relative;
+    position: relative;
   z-index: 1;
 
   display: grid;
@@ -45,19 +45,19 @@
 
   gap: 11px 20px;
   grid-template-areas: "logo info"
-    "logo nav";
+  "logo nav";
 
+  //@include md
   @include lg {
     padding-top: 20px;
 
     gap: $gap;
     grid-template-areas: "info info"
-      "logo logo"
-      "nav nav";
+    "logo logo"
+    "nav nav";
   }
-
   @include sm {
     grid-template-areas: "info info"
-      "logo nav";
+    "logo nav";
   }
 }

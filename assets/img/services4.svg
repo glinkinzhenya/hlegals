@@ -13,23 +13,23 @@
 <defs>
 <linearGradient id="paint0_linear_39243_2189" x1="46.5057" y1="70" x2="46.5057" y2="76" gradientUnits="userSpaceOnUse">
 <stop stop-color="#EF8080"/>
-<stop offset="1" stop-color="$color-red"/>
+<stop offset="1" stop-color="#F0145A"/>
 </linearGradient>
 <linearGradient id="paint1_linear_39243_2189" x1="22.4551" y1="23.1698" x2="25.9907" y2="26.7053" gradientUnits="userSpaceOnUse">
 <stop stop-color="#EF8080"/>
-<stop offset="1" stop-color="$color-red"/>
+<stop offset="1" stop-color="#F0145A"/>
 </linearGradient>
 <linearGradient id="paint2_linear_39243_2189" x1="61.3449" y1="18.0895" x2="74.78" y2="31.5246" gradientUnits="userSpaceOnUse">
 <stop stop-color="#EF8080"/>
-<stop offset="1" stop-color="$color-red"/>
+<stop offset="1" stop-color="#F0145A"/>
 </linearGradient>
 <linearGradient id="paint3_linear_39243_2189" x1="46.1427" y1="21.9786" x2="46.1427" y2="51.0305" gradientUnits="userSpaceOnUse">
 <stop stop-color="#EF8080"/>
-<stop offset="1" stop-color="$color-red"/>
+<stop offset="1" stop-color="#F0145A"/>
 </linearGradient>
 <linearGradient id="paint4_linear_39243_2189" x1="46.4124" y1="31.4877" x2="46.4124" y2="68.9315" gradientUnits="userSpaceOnUse">
 <stop stop-color="#EF8080"/>
-<stop offset="1" stop-color="$color-red"/>
+<stop offset="1" stop-color="#F0145A"/>
 </linearGradient>
 </defs>
 </svg>

@@ -13,11 +13,13 @@
   background-color: #f5f5fa;
 
   gap: $gap;
-
   @include md {
     align-items: center;
     flex-direction: column;
   }
+
+
+
 
   &__info {
     display: flex;
@@ -37,34 +39,42 @@
 
   content: "";
 
-  background-color: $color-gray-separator;
+  background-color: #e6e6f0;
 }
 
 .info-contact {
   display: flex;
 
   gap: $gap;
-
   @include sm {
     align-items: center;
     flex-direction: column;
   }
 
-  &__address {
-    &-link {
-      color: $color-primary;
 
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 19px;
+  &__address {
+   
+
+
+    &-link {
+       color: #323264;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
     }
   }
+
+
+
+
+
 
   &__link {
     letter-spacing: 1px;
     text-transform: uppercase;
 
-    color: $color-active;
+    color: #24a3ff;
 
     font-size: 12px;
     font-weight: 700;
@@ -77,11 +87,18 @@
   align-items: center;
 
   gap: $gap;
-
   @include sm {
     align-items: center;
     flex-direction: column;
   }
+
+
+
+
+
+
+
+
 
   &__number-tel {
     color: #46466e;
@@ -91,8 +108,10 @@
     line-height: 19px;
   }
 
+
+
   &__mail-link {
-    color: $color-active;
+    color: #24a3ff;
 
     font-size: 16px;
     font-weight: 700;
@@ -101,7 +120,7 @@
 }
 
 .footer-secondary__copyright {
-  color: $color-gray-text;
+  color: #b3b3ba;
 
   font-size: 16px;
   line-height: 19px;
